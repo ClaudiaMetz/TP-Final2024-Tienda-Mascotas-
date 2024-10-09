@@ -1,3 +1,5 @@
+# Descripción del Contenido
+
 La página se centra en recordar a los poseedores de mascotas una serie de cuidados básicos que siempre conviene tener en cuenta.
 
 Está estrucuturada en 4 secciones:
