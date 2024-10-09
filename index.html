@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestras Mascotas</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>Cuidemos a nuestras Mascotas</h1>
+        <h3>Ellas son parte de nuestra familia también</h3>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Cuidados</a></li>
+          <li><a href="#">Consejos</a></li>
+          <li><a href="#">Visitanos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="secciones" id="Cuidados">
+        <h2>Cuidados</h2>
+        <div class="card-container">
+          <div class="card" id="cuidadosCard1">
+            <h4>Alimentación Balanceada:</h4>
+            <p>
+              Proporciona una dieta nutritiva y equilibrada según las necesidades
+              específicas de tu mascota.
+            </p>
+            <img
+              src="./assets/dieta_Nutritiva_y_Equilibrada.png"
+              alt="dieta_Nutritiva_y_Equilibrada"
+            />
+          </div>
+          <div class="card" id="cuidadosCard2">
+            <h4>Agua Fresca Siempre Disponible:</h4>
+            <p>Asegúrate de que siempre haya agua limpia y fresca disponible.</p>
+            <img
+              src="./assets/agua_Fresca_Siempre_Disponible.jpeg"
+              alt="agua_Fresca_Siempre_Disponible"
+            />
+          </div>
+          <div class="card" id="cuidadosCard3">
+            <h4>Visitas Veterinarias Regulares:</h4>
+            <p>Programa revisiones periódicas para chequeos de salud y vacunas.</p>
+            <img
+              src="./assets/visitas_Veterinarias_Regulares.jpeg"
+              alt="visitas_Veterinarias_Regulares"
+            />
+          </div>
+          <div class="card" id="cuidadosCard4">
+            <h4>Ejercicio Diario:</h4>
+            <p>
+              Proporciona tiempo diario para actividades físicas y mentales que se
+              adapten a la especie y edad de tu mascota.
+            </p>
+            <img src="./assets/ejercicio_Diario.jpeg" alt="ejercicio_Diario" />
+          <div class="card" id="cuidadosCard5">
+            <h4>Higiene Regular:</h4>
+            <p>
+              Báñalos, cepillalos y corta las uñas de tu mascota según sea necesario.
+            </p>
+            <img src="./assets/bañalos_Cepillalos_y_Corta_sus_Uñas.jpeg" 
+            alt="bañalos_Cepillalos_y_Corta_sus_Uñas" />
+          </div>
+        </div>
+      </section>
+      <section class="secciones" id="Consejos">
+        <h2>Consejos</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+          voluptatum alias itaque illo qui voluptatibus debitis quod dolores
+          sequi veniam.
+        </p>
+      </section>
+      <section class="secciones" id="Visitanos">
+        <h2>Visitanos</h2>
+        <!-- insertar un mapa -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+          voluptatum alias itaque illo qui voluptatibus debitis quod dolores
+          sequi veniam.
+        </p>
+      </section>
+      <section class="secciones" id="Contacto">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/mbljrdyn" method="POST">
+          <fieldset>
+            <legend>
+              <h4>Comunicate con nosotros</h4>
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" required minlength="3" />
+              <label for="lastname">Apellido</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                required
+                minlength="3"
+              />
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="usuario@cuenta.com"
+                pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+                required
+              />
+              <!-- este pattern controla que el mail inicie con al menos un caracter, puede seguir 
+               con números, letras o caracteres especiales (no @), luego puede haber sólo una @ y seguido 
+               de ella un dominio y hasta 1 subdominio, terminando con 2 caracteres después del último punto -->
+              <label for="phone">Teléfono</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="area + número sin espacios"
+              />
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="40"
+                rows="8"
+              ></textarea>
+              <input type="submit" value="Enviar Comentario" />
+              <input type="reset" value="Limpiar formulario" />
+            </legend>
+          </fieldset>
+        </form>
+      </section>
+      <section class="secciones" id="Nosotros">
+        <h2>Quienes somos</h2>
+        <!-- implementar CARDS en esta sección -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+          voluptatum alias itaque illo qui voluptatibus debitis quod dolores
+          sequi veniam.
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+<!-- NO OLVIDAR DE HACER EL README.md Y DEPLOYAR LA PÁGINA CON GITHUB PAGES -->
