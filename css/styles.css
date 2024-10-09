@@ -1,17 +1,178 @@
 * {
   box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f2e9b2;
+}
+
+header {
+  padding: 2em;
+}
+
+h1 {
+  font-size: 300%;
+  color: #295db1;
+}
+
+.titulo_header {
+  font-size: x-large;
+  color: #295db1;
+  line-height: 1.5em;
+}
+
+.titulo_header {
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ul_navegador {
+  list-style-type: none;
+  padding: 0.1em;
+}
+
+.li_navegador {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.a_navegador {
+  text-decoration: none;
+  font-size: x-large;
+  color: rgb(167, 196, 220);
+  background-color: #a55ca1;
+  padding: 0.3em;
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a_navegador:hover {
+  color: gold;
+  font-weight: bold;
+}
+
+hr {
+  color: #295db1;
+  border-width: 2px;
+}
+
+.secciones {
+  padding: 2em;
+}
+
+.secciones h2,
+h3 {
+  color: #a55ca1;
+  font-size: large;
+  text-align: center;
+}
+
+.secciones h2 {
+  font-size: 2em;
+}
+
+.secciones p {
+  font-size: 1.8em;
+  color: #a55ca1;
 }
 
 .card-container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Distribución equitativa entre las tarjetas */
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribución equitativa entre las tarjetas */
   align-items: center; /* Centra verticalmente las tarjetas */
 }
 
 .card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Otros estilos según tu diseño */
+  width: 18em;
+  height: 25em;
+  margin-top: 1em;
+  background-color: #d8e61a;
+  border: 2px solid rgb(167, 196, 220);
+  padding: 10px;
+  border-radius: 5%;
+  position: relative;
+}
+
+.card h4 {
+  color: #a55ca1;
+  background-color: #d8e61a;
+  font-size: large;
+  text-align: center;
+}
+
+.card img {
+  width: 12em;
+  height: 12em;
+  display: block;
+  margin: 0 auto;
+}
+
+.card p {
+  color: #edc0c7;
+  font-size: medium;
+  text-align: center;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #a55ca1;
+  padding: 10px;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.card:hover p {
+  display: block;
+}
+
+.card:hover {
+  background-color: #d8df81;
+  box-shadow: 5px 5px 10px rgb(167, 196, 220);
+}
+
+.secciones form {
+  width: 70%;
+  color: #a55ca1;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario_contacto {
+  max-width: 70%;
+  padding: 2em;
+  background-color: #e68593;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.formulario_contacto h4 {
+  font-size: large;
+  font-weight: bold;
+}
+
+--------------------------------- .color1 {
+  color: #295db1;
+}
+.color2 {
+  color: #a55ca1;
+}
+.color3 {
+  color: #e68593;
+}
+.color4 {
+  color: #ffc09b;
+}
+.color5 {
+  color: #f2e9b2;
 }

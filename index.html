@@ -3,140 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ruta/al/archivo/font-awesome.min.css" />
     <title>Nuestras Mascotas</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
-      <div>
+      <div class="titulo_header">
         <h1>Cuidemos a nuestras Mascotas</h1>
-        <h3>Ellas son parte de nuestra familia también</h3>
+        <h2>Ellas son parte de nuestra familia también</h2>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Cuidados</a></li>
-          <li><a href="#">Consejos</a></li>
-          <li><a href="#">Visitanos</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Nosotros</a></li>
+      <nav class="nav-container">
+        <ul class="ul_navegador">
+          <li class="li_navegador">
+            <a href="#Cuidados" class="a_navegador">Cuidados</a>
+          </li>
+          <li class="li_navegador">
+            <a href="#Consejos" class="a_navegador">Consejos</a>
+          </li>
+          <li class="li_navegador">
+            <a href="#Visitanos" class="a_navegador">Visitanos</a>
+          </li>
+          <li class="li_navegador">
+            <a href="#Contacto" class="a_navegador">Contacto</a>
+          </li>
+          <li class="li_navegador">
+            <a href="#Nosotros" class="a_navegador">Nosotros</a>
+          </li>
         </ul>
       </nav>
     </header>
+    <hr />
     <main>
       <section class="secciones" id="Cuidados">
         <h2>Cuidados</h2>
+        <h3>
+          Aquí te dejamos una serie de recomendaciones que podés seguir para el
+          bienestar de tus mascotas
+        </h3>
         <div class="card-container">
           <div class="card" id="cuidadosCard1">
-            <h4>Alimentación Balanceada:</h4>
+            <h4>Alimentación Balanceada</h4>
             <p>
-              Proporciona una dieta nutritiva y equilibrada según las necesidades
-              específicas de tu mascota.
+              Proporcionales una dieta nutritiva y equilibrada según las
+              necesidades específicas de tus mascotas.
             </p>
             <img
-              src="./assets/dieta_Nutritiva_y_Equilibrada.png"
+              src="./assets/imagenes/dieta_Nutritiva_y_Equilibrada.png"
               alt="dieta_Nutritiva_y_Equilibrada"
             />
           </div>
           <div class="card" id="cuidadosCard2">
-            <h4>Agua Fresca Siempre Disponible:</h4>
-            <p>Asegúrate de que siempre haya agua limpia y fresca disponible.</p>
+            <h4>Agua Fresca Siempre Disponible</h4>
+            <p>
+              Asegurate de que siempre tengan agua limpia y fresca disponible.
+            </p>
             <img
-              src="./assets/agua_Fresca_Siempre_Disponible.jpeg"
+              src="./assets/imagenes/agua_Fresca_Siempre_Disponible.jpeg"
               alt="agua_Fresca_Siempre_Disponible"
             />
           </div>
           <div class="card" id="cuidadosCard3">
-            <h4>Visitas Veterinarias Regulares:</h4>
-            <p>Programa revisiones periódicas para chequeos de salud y vacunas.</p>
+            <h4>Visitas Veterinarias Regulares</h4>
+            <p>
+              Programá revisiones periódicas para chequeos de salud y vacunas.
+            </p>
             <img
-              src="./assets/visitas_Veterinarias_Regulares.jpeg"
+              src="./assets/imagenes/visitas_Veterinarias_Regulares.jpeg"
               alt="visitas_Veterinarias_Regulares"
             />
           </div>
           <div class="card" id="cuidadosCard4">
-            <h4>Ejercicio Diario:</h4>
+            <h4>Ejercicio Diario</h4>
             <p>
-              Proporciona tiempo diario para actividades físicas y mentales que se
-              adapten a la especie y edad de tu mascota.
+              Proporcionales tiempo diario para actividades físicas y mentales
+              que se adapten a la especie y edad de tus mascotas.
             </p>
-            <img src="./assets/ejercicio_Diario.jpeg" alt="ejercicio_Diario" />
+            <img
+              src="./assets/imagenes/ejercicio_Diario.jpeg"
+              alt="ejercicio_Diario"
+            />
+          </div>
           <div class="card" id="cuidadosCard5">
-            <h4>Higiene Regular:</h4>
+            <h4>Higiene Regular</h4>
             <p>
-              Báñalos, cepillalos y corta las uñas de tu mascota según sea necesario.
+              Báñalos, cepillalos y cortá las uñas de tu mascota según sea
+              necesario.
             </p>
-            <img src="./assets/bañalos_Cepillalos_y_Corta_sus_Uñas.jpeg" 
-            alt="bañalos_Cepillalos_y_Corta_sus_Uñas" />
+            <img
+              src="./assets/imagenes/bañalos_Cepillalos_y_Corta_sus_Uñas.jpeg"
+              alt="bañalos_Cepillalos_y_Corta_sus_Uñas"
+            />
           </div>
         </div>
       </section>
+      <hr />
       <section class="secciones" id="Consejos">
         <h2>Consejos</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-          voluptatum alias itaque illo qui voluptatibus debitis quod dolores
-          sequi veniam.
-        </p>
+        <h3>
+          Y aquí te acercamos una serie de tips para relacionarte mejor con tus
+          mascotas
+        </h3>
+        <div class="card-container">
+          <div class="card" id="consejosCard1">
+            <h4>Refuerzo Positivo</h4>
+            <p>
+              Recompensá a tus mascotas con golosinas, caricias o elogios cuando
+              muestren un buen comportamiento. Esto ayuda a reforzar las
+              conductas deseadas.
+            </p>
+            <img
+              src="./assets/imagenes/refuerzo_Positivo.jpeg"
+              alt="refuerzo_Positivo"
+            />
+          </div>
+          <div class="card" id="consejosCard2">
+            <h4>Consistencia</h4>
+            <p>
+              Sé consistente con las reglas y comandos. Las mascotas aprenden
+              mejor cuando las expectativas son claras y constantes.
+            </p>
+            <img src="./assets/imagenes/consistencia.jpeg" alt="consistencia" />
+          </div>
+          <div class="card" id="consejosCard3">
+            <h4>Socialización Temprana</h4>
+            <p>
+              Exponer a tu mascota a diferentes personas, animales y entornos
+              desde una edad temprana puede ayudar a prevenir problemas de
+              comportamiento y ansiedad.
+            </p>
+            <img
+              src="./assets/imagenes/socializacion_Temprana.jpeg"
+              alt="socialización_Temprana"
+            />
+          </div>
+          <div class="card" id="consejosCard4">
+            <h4>Rutina Establecida</h4>
+            <p>
+              Mantené una rutina diaria para tus mascotas, incluyendo horarios
+              de alimentación, paseos y tiempo de juego. Las mascotas se sienten
+              más seguras y tranquilas con una rutina predecible.
+            </p>
+            <img
+              src="./assets/imagenes/rutina_Establecida.jpeg"
+              alt="rutina_Establecida"
+            />
+          </div>
+          <div class="card" id="consejosCard5">
+            <h4>Entrenamiento de Obediencia</h4>
+            <p>
+              Dedicá tiempo a entrenar a tus mascotas en comandos básicos como
+              “sentado”, “quieto” y “ven”. Esto no sólo mejorará el
+              comportamiento, sino que también fortalecerá el vínculo con tus
+              mascotas.
+            </p>
+            <img
+              src="./assets/imagenes/entrenamiento_de_obediencia.jpeg"
+              alt="entrenamiento_de_obediencia"
+            />
+          </div>
+        </div>
       </section>
+      <hr />
       <section class="secciones" id="Visitanos">
         <h2>Visitanos</h2>
-        <!-- insertar un mapa -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5279250377366!2d-58.4081975253312!3d-34.641368159485715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb127a589507%3A0xf7254e2dd02a85f5!2sLos%20Patos%203050%2C%20C1437JAJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728453955476!5m2!1ses-419!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-          voluptatum alias itaque illo qui voluptatibus debitis quod dolores
-          sequi veniam.
+          Te invitamos a que nos visites cuando quieras dentro de nuestro
+          horario de 10 a 20 hs. <br />
+          Estamos en calle Los Patos 3050, muy, pero muy cerquita de Parque
+          Patricios.
         </p>
       </section>
+      <hr />
       <section class="secciones" id="Contacto">
         <h2>Contacto</h2>
-        <form action="https://formspree.io/f/mbljrdyn" method="POST">
-          <fieldset>
-            <legend>
-              <h4>Comunicate con nosotros</h4>
-              <label for="name">Nombre</label>
-              <input type="text" name="name" id="name" required minlength="3" />
-              <label for="lastname">Apellido</label>
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                required
-                minlength="3"
-              />
-              <label for="email">E-mail</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="usuario@cuenta.com"
-                pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
-                required
-              />
-              <!-- este pattern controla que el mail inicie con al menos un caracter, puede seguir 
+        <div class="form-container">
+          <form
+            action="https://formspree.io/f/mbljrdyn"
+            method="POST"
+            class="formulario_contacto"
+          >
+            <fieldset>
+              <legend>
+                <h4>Comunicate con nosotros</h4>
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  minlength="3"
+                />
+                <label for="lastname">Apellido</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  required
+                  minlength="3"
+                />
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="usuario@cuenta.com"
+                  pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+                  required
+                />
+                <!-- este pattern controla que el mail inicie con al menos un caracter, puede seguir 
                con números, letras o caracteres especiales (no @), luego puede haber sólo una @ y seguido 
                de ella un dominio y hasta 1 subdominio, terminando con 2 caracteres después del último punto -->
-              <label for="phone">Teléfono</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="area + número sin espacios"
-              />
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                name="mensaje"
-                id="mensaje"
-                cols="40"
-                rows="8"
-              ></textarea>
-              <input type="submit" value="Enviar Comentario" />
-              <input type="reset" value="Limpiar formulario" />
-            </legend>
-          </fieldset>
-        </form>
+                <label for="phone">Teléfono</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="area + número sin espacios"
+                />
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="40"
+                  rows="8"
+                ></textarea>
+                <input type="submit" value="Enviar Comentario" />
+                <input type="reset" value="Limpiar formulario" />
+              </legend>
+            </fieldset>
+          </form>
+        </div>
       </section>
+      <hr />
       <section class="secciones" id="Nosotros">
         <h2>Quienes somos</h2>
         <!-- implementar CARDS en esta sección -->
@@ -147,7 +263,13 @@
         </p>
       </section>
     </main>
-    <footer></footer>
+    <hr />
+    <footer>
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-square-whatsapp"></i>
+    </footer>
   </body>
 </html>
 
