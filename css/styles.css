@@ -1,4 +1,4 @@
-* {
+:root {
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
   background-color: #f2e9b2;
@@ -10,6 +10,7 @@ header {
 
 h1 {
   font-size: 300%;
+  line-height: 0.85;
   color: #295db1;
 }
 
@@ -17,11 +18,10 @@ h1 {
   font-size: x-large;
   color: #295db1;
   line-height: 1.5em;
-}
-
-.titulo_header {
   text-align: center;
 }
+
+
 
 .nav-container {
   display: flex;
@@ -57,6 +57,7 @@ h1 {
 hr {
   color: #295db1;
   border-width: 2px;
+  margin: 2rem;
 }
 
 .secciones {
@@ -84,8 +85,8 @@ h3 {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Distribución equitativa entre las tarjetas */
-  align-items: center; /* Centra verticalmente las tarjetas */
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card {
@@ -148,20 +149,114 @@ h3 {
   height: 100vh;
 }
 
+.mapa,
+.parrafo_mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600;
+  height: 400;
+  border: 0;
+}
+
+.redes {
+  background-color: #d8df81;
+  border: 2px solid #295db1;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a55ca1;
+}
+
+.redes p {
+  font-size: small;
+}
+
+.iconosRedes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1rem;
+}
+
+.iconosRedes a {
+  margin: 0 15px;
+}
+
 .formulario_contacto {
-  max-width: 70%;
-  padding: 2em;
-  background-color: #e68593;
-  border: 2px solid #ccc;
+  margin: 2rem;
+  padding: 1em 2em 2em 2em;
+  background-color: #d8df81;
+  border: 2px solid #295db1;
   border-radius: 10px;
 }
 
 .formulario_contacto h4 {
+  color: #295db1;
   font-size: large;
   font-weight: bold;
 }
 
---------------------------------- .color1 {
+fieldset {
+  border-color: #295db1;
+  background-color: #dde0b0;
+  padding: 0 3em 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset input {
+  border-radius: 10px;
+  border: 1px solid #a55ca1;
+  background-color: #eaf4c0;
+  height: 2rem;
+}
+
+fieldset textarea {
+  background-color: #edf4d2;
+}
+
+.botonesForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1rem;
+}
+
+.submit {
+  background-color: #79e61a;
+  color: #295db1;
+}
+
+.reset {
+  background-color: #e66f1a;
+  color: #295db1;
+}
+
+.submit:hover,
+.reset:hover {
+  color: azure;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1rem;
+  color: #295db1;
+}
+
+/*---------------------------------*/
+
+/*  PALETA  */
+
+.color1 {
   color: #295db1;
 }
 .color2 {

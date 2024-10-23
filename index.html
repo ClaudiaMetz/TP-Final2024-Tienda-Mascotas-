@@ -9,7 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="ruta/al/archivo/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="ruta/al/archivo/font-awesome.min.css" /> -->
     <title>Nuestras Mascotas</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -175,21 +179,32 @@
       <hr />
       <section class="secciones" id="Visitanos">
         <h2>Visitanos</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5279250377366!2d-58.4081975253312!3d-34.641368159485715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb127a589507%3A0xf7254e2dd02a85f5!2sLos%20Patos%203050%2C%20C1437JAJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728453955476!5m2!1ses-419!2sar"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <p>
+        <div class="mapa">
+          <img
+            src="./assets/animaciones/gatito_asomado_animacion.gif"
+            alt="animacion_de_gatito"
+          />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5279250377366!2d-58.4081975253312!3d-34.641368159485715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb127a589507%3A0xf7254e2dd02a85f5!2sLos%20Patos%203050%2C%20C1437JAJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728453955476!5m2!1ses-419!2sar"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p class="parrafo_mapa">
           Te invitamos a que nos visites cuando quieras dentro de nuestro
           horario de 10 a 20 hs. <br />
           Estamos en calle Los Patos 3050, muy, pero muy cerquita de Parque
-          Patricios.
+          Patricios, CABA.
         </p>
+        <div class="redes">
+          <p>Buscanos en las redes como <b>Nuestras Mascotas</b></p>
+          <div class="iconosRedes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
       </section>
       <hr />
       <section class="secciones" id="Contacto">
@@ -203,51 +218,47 @@
             <fieldset>
               <legend>
                 <h4>Comunicate con nosotros</h4>
-                <label for="name">Nombre</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  minlength="3"
-                />
-                <label for="lastname">Apellido</label>
-                <input
-                  type="text"
-                  name="lastname"
-                  id="lastname"
-                  required
-                  minlength="3"
-                />
-                <label for="email">E-mail</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="usuario@cuenta.com"
-                  pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
-                  required
-                />
-                <!-- este pattern controla que el mail inicie con al menos un caracter, puede seguir 
+              </legend>
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" required minlength="3" />
+              <label for="lastname">Apellido</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                required
+                minlength="3"
+              />
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="usuario@cuenta.com"
+                pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+                required
+              />
+              <!-- este pattern controla que el mail inicie con al menos un caracter, puede seguir 
                con números, letras o caracteres especiales (no @), luego puede haber sólo una @ y seguido 
                de ella un dominio y hasta 1 subdominio, terminando con 2 caracteres después del último punto -->
-                <label for="phone">Teléfono</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="area + número sin espacios"
-                />
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  name="mensaje"
-                  id="mensaje"
-                  cols="40"
-                  rows="8"
-                ></textarea>
-                <input type="submit" value="Enviar Comentario" />
-                <input type="reset" value="Limpiar formulario" />
-              </legend>
+              <label for="phone">Teléfono</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="area + números sin espacios"
+              />
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="40"
+                rows="8"
+              ></textarea>
+              <div class="botonesForm">
+                <input class="submit" type="submit" value="Enviar Comentario" />
+                <input class="reset" type="reset" value="Limpiar Formulario" />
+              </div>
             </fieldset>
           </form>
         </div>
@@ -256,21 +267,17 @@
       <section class="secciones" id="Nosotros">
         <h2>Quienes somos</h2>
         <!-- implementar CARDS en esta sección -->
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-          voluptatum alias itaque illo qui voluptatibus debitis quod dolores
-          sequi veniam.
-        </p>
+        <p>Las cards de esta sección van ordenadas con grid.</p>
       </section>
     </main>
     <hr />
     <footer>
-      <i class="fa-brands fa-square-facebook"></i>
-      <i class="fa-brands fa-square-instagram"></i>
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-square-whatsapp"></i>
+      <i class="fa-sharp fa-regular fa-copyright"></i>
+      <p>Sitio construído por Claudia Metz - Comisión 24288</p>
     </footer>
   </body>
 </html>
 
-<!-- NO OLVIDAR DE HACER EL README.md Y DEPLOYAR LA PÁGINA CON GITHUB PAGES -->
+<!-- NO OLVIDAR DE DEPLOYAR LA PÁGINA CON GITHUB PAGES -->
+
+<!--  https://mybrandnewlogo.com/es/generador-de-paleta-de-colores para usar paleta  -->

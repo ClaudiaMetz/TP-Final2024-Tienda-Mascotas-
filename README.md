@@ -1,8 +1,8 @@
-# Descripción del Contenido
+# Descripción del Contenido "Nuestras Mascotas"
 
 La página se centra en recordar a los poseedores de mascotas una serie de cuidados básicos que siempre conviene tener en cuenta.
 
-Está estructurada en 5 secciones:
+Está estructurada en 6 secciones:
 
 - Cuidados
 - Consejos
@@ -10,9 +10,9 @@ Está estructurada en 5 secciones:
 - Contacto
 - Nosotros
 
-_Cuidados:_ Despliega 5 cards c/u con un consejo de cuidado.
+_Cuidados:_ Despliega 5 cards c/u incluye un consejo de cuidado.
 
-_Consejos:_ Despliega 5 cards c/u con un tip de comportamiento.
+_Consejos:_ Despliega 5 cards c/u incluye un tip de comportamiento.
 
 _Visitanos:_ Indica cómo llegar a nuestras instalaciones. Incluye un mapa.
 
