@@ -2,7 +2,7 @@
 
 La página se centra en recordar a los poseedores de mascotas una serie de cuidados básicos que siempre conviene tener en cuenta.
 
-Está estructurada en 6 secciones:
+Está estructurada en 5 secciones:
 
 - Cuidados
 - Consejos

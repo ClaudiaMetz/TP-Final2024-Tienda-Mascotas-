@@ -312,28 +312,41 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .secciones {
+    padding: 0.3em;
+    margin: auto;
+  }
+
   .mapa,
   .parrafo_mapa {
     width: 90%;
   }
 
+  .formulario_contacto {
+    margin: 0.5rem;
+  }
+
   .form-container fieldset {
-    width: 90%;
-    padding: 1rem;
+    width: 95%;
+    padding: 0.5rem;
   }
   .form-container label,
   .form-container input,
   .form-container textarea {
     width: 100%;
     margin-bottom: 1rem;
-    line-height: 1em;
-    line-height: 0.5;
   }
+
+  .form-container textarea {
+    line-height: 1;
+  }
+
   .botonesForm {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
+
   .botonesForm .submit,
   .botonesForm .reset {
     width: 100%;
