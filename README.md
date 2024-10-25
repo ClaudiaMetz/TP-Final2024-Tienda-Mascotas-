@@ -10,14 +10,14 @@ Está estructurada en 6 secciones:
 - Contacto
 - Nosotros
 
-_Cuidados:_ Despliega 5 cards c/u incluye un consejo de cuidado.
+_Cuidados:_ Despliega 5 cards con recomendaciones para el bienestar de las mascotas, como alimentación balanceada, agua fresca, visitas veterinarias regulares, ejercicio diario e higiene.
 
-_Consejos:_ Despliega 5 cards c/u incluye un tip de comportamiento.
+_Consejos:_ Despliega 5 cards con tips para mejorar la relación con las mascotas, incluyendo refuerzo positivo, consistencia, socialización temprana, rutina establecida y entrenamiento de obediencia.
 
-_Visitanos:_ Indica cómo llegar a nuestras instalaciones. Incluye un mapa.
+_Visitanos:_ Información sobre la ubicación y horario del establecimiento, invitando a los usuarios a visitarlo. Incluye un mapa y accesos a nuestras redes sociales.
 
 _Contacto:_ Un formulario para que nos hagas llegar tus dudas, consultas y/o comentarios.
 
-_Nosotros:_ Breve descripción de nuestra fundación, propósito y espectativas a futuro.
+_Nosotros:_ Breve descripción de nuestra fundación, propósito y expectativas a futuro.
 
-Al pie se deja accesos a nuestras redes sociales.
+Al pie, copyright.
