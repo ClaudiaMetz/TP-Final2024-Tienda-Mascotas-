@@ -2,6 +2,67 @@
   box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
   background-color: #f2e9b2;
+  --color1: #295db1;
+  --color2: #a55ca1;
+  --color3: #e68593;
+  --color4: #ffc09b;
+  --color5: #f2e9b2;
+  --color6: rgb(167, 196, 220);
+  --hover-color6: gold;
+  --color7: #d8e61a;
+  --color8: #edc0c7;
+  --color9: #d8df81;
+  --color10: #dde0b0;
+  --color11: #eaf4c0;
+  --color12: #edf4d2;
+  --color13: #79e61a;
+  --color14: #e66f1a;
+}
+
+.color1 {
+  color: var(--color1);
+}
+.color2 {
+  color: var(--color2);
+}
+.color3 {
+  color: var(--color3);
+}
+.color4 {
+  color: var(--color4);
+}
+.color5 {
+  color: var(--color5);
+}
+.color6 {
+  color: var(--color6);
+}
+.color6:hover {
+  color: var(--hover-color6);
+}
+.color7 {
+  color: var(--color7);
+}
+.color8 {
+  color: var(--color8);
+}
+.color9 {
+  color: var(--color9);
+}
+.color10 {
+  color: var(--color10);
+}
+.color11 {
+  color: var(--color11);
+}
+.color12 {
+  color: var(--color12);
+}
+.color13 {
+  color: var(--color13);
+}
+.color14 {
+  color: var(--color14);
 }
 
 header {
@@ -11,12 +72,12 @@ header {
 h1 {
   font-size: 300%;
   line-height: 0.85;
-  color: #295db1;
+  /*color: #295db1;*/
 }
 
 .titulo_header {
   font-size: x-large;
-  color: #295db1;
+  /*color: #295db1;*/
   line-height: 1.5em;
   text-align: center;
 }
@@ -39,8 +100,8 @@ h1 {
 .a_navegador {
   text-decoration: none;
   font-size: x-large;
-  color: rgb(167, 196, 220);
-  background-color: #a55ca1;
+  /*color: rgb(167, 196, 220);*/
+  background-color: var(--color2);
   padding: 0.3em;
   border-radius: 10%;
   display: flex;
@@ -48,12 +109,12 @@ h1 {
 }
 
 .a_navegador:hover {
-  color: gold;
+  /*color: gold;*/
   font-weight: bold;
 }
 
 hr {
-  color: #295db1;
+  /*color: #295db1;*/
   border-width: 2px;
   margin: 2rem;
 }
@@ -64,7 +125,7 @@ hr {
 
 .secciones h2,
 h3 {
-  color: #a55ca1;
+  /*color: #a55ca1;*/
   font-size: large;
   text-align: center;
 }
@@ -75,7 +136,7 @@ h3 {
 
 .secciones p {
   font-size: 1.8em;
-  color: #a55ca1;
+  /*color: #a55ca1;*/
 }
 
 .card-container {
@@ -91,16 +152,16 @@ h3 {
   width: 18em;
   height: 25em;
   margin-top: 1em;
-  background-color: #d8e61a;
-  border: 2px solid rgb(167, 196, 220);
+  background-color: var(--color7);
+  border: 2px solid var(--color6);
   padding: 10px;
   border-radius: 5%;
   position: relative;
 }
 
 .card h4 {
-  color: #a55ca1;
-  background-color: #d8e61a;
+  /*color: #a55ca1;*/
+  background-color: var(--color7);
   font-size: large;
   text-align: center;
 }
@@ -113,14 +174,14 @@ h3 {
 }
 
 .card p {
-  color: #edc0c7;
+  /*color: #edc0c7;*/
   font-size: medium;
   text-align: center;
   display: none;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #a55ca1;
+  background-color: var(--color2);
   padding: 10px;
   width: 18em;
   transition: opacity 0.3s;
@@ -131,13 +192,13 @@ h3 {
 }
 
 .card:hover {
-  background-color: #d8df81;
-  box-shadow: 5px 5px 10px rgb(167, 196, 220);
+  background-color: var(--color7);
+  box-shadow: 5px 5px 10px var(--color6);
 }
 
 .secciones form {
   width: 70%;
-  color: #a55ca1;
+  /*color: #a55ca1;*/
 }
 
 .form-container {
@@ -158,13 +219,13 @@ h3 {
 }
 
 .redes {
-  background-color: #d8df81;
-  border: 2px solid #295db1;
+  background-color: var(--color9);
+  border: 2px solid var(--color1);
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #a55ca1;
+  /*color: #a55ca1;*/
 }
 
 .redes p {
@@ -185,20 +246,20 @@ h3 {
 .formulario_contacto {
   margin: 2rem;
   padding: 1em 2em 2em 2em;
-  background-color: #d8df81;
-  border: 2px solid #295db1;
+  background-color: var(--color9);
+  border: 2px solid var(--color1);
   border-radius: 10px;
 }
 
 .formulario_contacto h4 {
-  color: #295db1;
+  /*color: #295db1;*/
   font-size: large;
   font-weight: bold;
 }
 
 fieldset {
-  border-color: #295db1;
-  background-color: #dde0b0;
+  border-color: var(--color2);
+  background-color: var(--color10);
   padding: 0 3em 2em;
   border-radius: 10px;
   display: flex;
@@ -207,13 +268,13 @@ fieldset {
 
 fieldset input {
   border-radius: 10px;
-  border: 1px solid #a55ca1;
-  background-color: #eaf4c0;
+  border: 1px solid var(--color2);
+  background-color: var(--color11);
   height: 2rem;
 }
 
 fieldset textarea {
-  background-color: #edf4d2;
+  background-color: var(--color12);
 }
 
 .botonesForm {
@@ -225,13 +286,13 @@ fieldset textarea {
 }
 
 .submit {
-  background-color: #79e61a;
-  color: #295db1;
+  background-color: var(--color13);
+  /*color: #295db1;*/
 }
 
 .reset {
-  background-color: #e66f1a;
-  color: #295db1;
+  background-color: var(--color14);
+  /*color: #295db1;*/
 }
 
 .submit:hover,
@@ -247,7 +308,7 @@ footer {
   justify-content: center;
   height: 3rem;
   padding: 1rem;
-  color: #295db1;
+  /*color: #295db1;*/
 }
 
 @media (max-width: 650px) {
@@ -265,7 +326,7 @@ footer {
   .form-container textarea {
     width: 100%;
     margin-bottom: 1rem;
-    line-height: 2em;
+    line-height: 1em;
     line-height: 0.5;
   }
   .botonesForm {
@@ -277,28 +338,9 @@ footer {
   .botonesForm .reset {
     width: 100%;
     margin-top: -30px;
-    line-height: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
 
 /*---------------------------------*/
-
-/*  PALETA  */
-
-.color1 {
-  color: #295db1;
-}
-.color2 {
-  color: #a55ca1;
-}
-.color3 {
-  color: #e68593;
-}
-.color4 {
-  color: #ffc09b;
-}
-.color5 {
-  color: #f2e9b2;
-}
