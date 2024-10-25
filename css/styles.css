@@ -17,6 +17,7 @@
   --color12: #edf4d2;
   --color13: #79e61a;
   --color14: #e66f1a;
+  --color15: azure;
 }
 
 .color1 {
@@ -63,6 +64,9 @@
 }
 .color14 {
   color: var(--color14);
+}
+.color15 {
+  color: var(--color15);
 }
 
 header {
@@ -297,7 +301,7 @@ fieldset textarea {
 
 .submit:hover,
 .reset:hover {
-  color: azure;
+  color: var(--color15);
   font-weight: bold;
 }
 
@@ -356,4 +360,54 @@ footer {
   }
 }
 
+@media (max-width: 420px) {
+  .card p {
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mapa {
+    width: 100%;
+    height: 300px;
+  }
+
+  .mapa img {
+    display: none;
+  }
+
+  .form-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 330px) {
+  h1 {
+    font-size: 200%;
+    line-height: 0.85;
+    /*color: #295db1;*/
+  }
+
+  .card p {
+    font-size: x-small;
+    padding: 2px;
+  }
+
+  .mapa {
+    width: 100%;
+    height: 200px;
+  }
+
+  .formulario_contacto textarea {
+    height: 100px;
+  }
+
+  .formulario_contacto input,
+  .formulario_contacto textarea {
+    font-size: 14px;
+  }
+}
 /*---------------------------------*/
