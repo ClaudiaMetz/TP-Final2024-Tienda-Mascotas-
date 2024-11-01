@@ -1,5 +1,6 @@
 :root {
   box-sizing: border-box;
+  margin: 0;
   font-family: "Titillium Web", sans-serif;
   background-color: #f2e9b2;
   --color1: #295db1;
@@ -144,23 +145,27 @@ h3 {
 }
 
 .card-container {
-  width: 80%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  overflow-x: scroll;
+  width: 60%;
   align-items: center;
 }
 
 .card {
-  width: 18em;
-  height: 25em;
   margin-top: 1em;
   background-color: var(--color7);
   border: 2px solid var(--color6);
-  padding: 10px;
+  padding: 5px;
   border-radius: 5%;
   position: relative;
+}
+
+.card img {
+  width: 9em;
+  height: 9em;
+  display: block;
+  margin: 0 auto;
 }
 
 .card h4 {
@@ -168,36 +173,32 @@ h3 {
   background-color: var(--color7);
   font-size: large;
   text-align: center;
-}
-
-.card img {
-  width: 12em;
-  height: 12em;
-  display: block;
-  margin: 0 auto;
+  line-height: 1.2;
 }
 
 .card p {
   /*color: #edc0c7;*/
   font-size: medium;
   text-align: center;
+  line-height: 1;
   display: none;
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: var(--color2);
   padding: 10px;
-  width: 18em;
+  width: 100%;
+  box-sizing: border-box;
   transition: opacity 0.3s;
-}
-
-.card:hover p {
-  display: block;
 }
 
 .card:hover {
   background-color: var(--color7);
   box-shadow: 5px 5px 10px var(--color6);
+}
+
+.card:hover p {
+  display: block;
 }
 
 .secciones form {
@@ -217,18 +218,21 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1;
   width: 600;
   height: 400;
   border: 0;
 }
 
 .redes {
+  width: 50%;
   background-color: var(--color9);
   border: 2px solid var(--color1);
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   /*color: #a55ca1;*/
 }
 
