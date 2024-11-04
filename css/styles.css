@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Titillium Web", sans-serif;
+  cursor: default;
   background-color: #f2e9b2;
   --color1: #295db1;
   --color2: #a55ca1;
@@ -116,6 +117,7 @@ h1 {
 .a_navegador:hover {
   /*color: gold;*/
   font-weight: bold;
+  cursor: url(./../assets/imagenes/pata_cursor.png), auto;
 }
 
 hr {
@@ -133,6 +135,8 @@ h3 {
   /*color: #a55ca1;*/
   font-size: large;
   text-align: center;
+  width: 70%;
+  margin: auto;
 }
 
 .secciones h2 {
@@ -140,7 +144,10 @@ h3 {
 }
 
 .secciones p {
-  font-size: 1.8em;
+  width: 80%;
+  margin: auto;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
   /*color: #a55ca1;*/
 }
 
@@ -232,6 +239,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: auto;
   /*color: #a55ca1;*/
 }
@@ -320,6 +328,11 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .a_navegador {
+    padding: 0.2em;
+    margin: 0.1em;
+  }
+
   .secciones {
     padding: 0.3em;
     margin: auto;
@@ -328,6 +341,7 @@ footer {
   .mapa,
   .parrafo_mapa {
     width: 90%;
+    font-size: 0.7em;
   }
 
   .formulario_contacto {
@@ -362,9 +376,21 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  footer .fa-copyright {
+    display: none;
+  }
 }
 
 @media (max-width: 420px) {
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
   .card p {
     font-size: small;
     padding: 5px;
@@ -386,11 +412,14 @@ footer {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
+  footer .fa-copyright {
+    display: none;
+  }
 }
 
 @media (max-width: 330px) {
   h1 {
-    font-size: 200%;
     line-height: 0.85;
     /*color: #295db1;*/
   }
@@ -405,6 +434,10 @@ footer {
     height: 200px;
   }
 
+  .parrafo_mapa {
+    font-size: 0.5em;
+  }
+
   .formulario_contacto textarea {
     height: 100px;
   }
@@ -412,6 +445,10 @@ footer {
   .formulario_contacto input,
   .formulario_contacto textarea {
     font-size: 14px;
+  }
+
+  footer .fa-copyright {
+    display: none;
   }
 }
 /*---------------------------------*/
