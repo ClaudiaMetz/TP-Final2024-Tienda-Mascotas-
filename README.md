@@ -31,17 +31,21 @@ Al pie, copyright.
 
 1. Clona el repositorio:
 
-   ````bash
+   ```bash
    git clone https://github.com/ClaudiaMetz/TP-Final2024-Tienda-Mascotas-
-   Navega al directorio del proyecto:
-   ```bash cd tu-repo
 
-   ````
+   ```
 
-2. Uso: Abre el archivo index.html en tu navegador para ver la página.
+2. Navega al directorio del proyecto:
 
-3. Contribuciones: Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para discutir cualquier cambio que desees realizar.
+   ```bash
+   cd tu-repo
+   ```
 
-4. Licencia: Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+3. Uso: Abre el archivo index.html en tu navegador para ver la página.
 
-5. Contacto: Si tienes alguna pregunta, no dudes en contactarnos a través de tu-email@ejemplo.com 😊.
+4. Contribuciones: Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para discutir cualquier cambio que desees realizar.
+
+5. Licencia: Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+6. Contacto: Si tienes alguna pregunta, no dudes en contactarnos a través de tu-email@ejemplo.com 😊.
