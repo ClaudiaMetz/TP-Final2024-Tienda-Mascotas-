@@ -21,3 +21,32 @@ _Contacto:_ Un formulario para que nos hagas llegar tus dudas, consultas y/o com
 _Nosotros:_ Breve descripción de nuestra fundación, propósito y expectativas a futuro.
 
 Al pie, copyright.
+
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo.git
+   Navega al directorio del proyecto:
+   ```
+
+bash
+cd tu-repo
+Uso
+Abre el archivo index.html en tu navegador para ver la página.
+
+Contribuciones
+Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para discutir cualquier cambio que desees realizar.
+
+Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+Contacto
+Si tienes alguna pregunta, no dudes en contactarnos a través de tu-email@ejemplo.com.
+
+Este README proporciona una descripción clara del proyecto, las tecnologías utilizadas, instrucciones de instalación y uso, información sobre contribuciones y detalles de contacto. ¡Espero que esto te sea útil! 😊

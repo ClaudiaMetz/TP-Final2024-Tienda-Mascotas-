@@ -3,19 +3,19 @@
   margin: 0;
   font-family: "Titillium Web", sans-serif;
   cursor: default;
-  background-color: #f2e9b2;
-  --color1: #295db1;
-  --color2: #a55ca1;
-  --color3: #e68593;
+  background-color: #aee7d0;
+  --color1: #1c23a5;
+  --color2: #634aef;
+  --color3: #e873b9;
   --color4: #ffc09b;
   --color5: #f2e9b2;
-  --color6: rgb(167, 196, 220);
-  --hover-color6: gold;
-  --color7: #d8e61a;
+  --color6: rgb(135, 185, 225);
+  --hover-color9: gold;
+  --color7: #e8b4f8;
   --color8: #edc0c7;
-  --color9: #d8df81;
-  --color10: #dde0b0;
-  --color11: #eaf4c0;
+  --color9: #ddabec;
+  --color10: #e9c7ec;
+  --color11: #cce9f0;
   --color12: #edf4d2;
   --color13: #79e61a;
   --color14: #e66f1a;
@@ -40,9 +40,6 @@
 .color6 {
   color: var(--color6);
 }
-.color6:hover {
-  color: var(--hover-color6);
-}
 .color7 {
   color: var(--color7);
 }
@@ -51,6 +48,9 @@
 }
 .color9 {
   color: var(--color9);
+}
+.color9:hover {
+  color: var(--hover-color9);
 }
 .color10 {
   color: var(--color10);
@@ -110,7 +110,9 @@ h1 {
   background-color: var(--color2);
   padding: 0.3em;
   border-radius: 10%;
-  display: flex;
+  width: 7rem;
+  display: inline-block;
+  text-align: center;
   justify-content: space-between;
 }
 
@@ -122,6 +124,7 @@ h1 {
 
 hr {
   /*color: #295db1;*/
+  border-color: var(--color2);
   border-width: 2px;
   margin: 2rem;
 }
@@ -201,7 +204,7 @@ h3 {
 
 .card:hover {
   background-color: var(--color7);
-  box-shadow: 5px 5px 10px var(--color6);
+  /*box-shadow: 5px 5px 10px var(--color6);*/
 }
 
 .card:hover p {
@@ -290,7 +293,7 @@ fieldset input {
 }
 
 fieldset textarea {
-  background-color: var(--color12);
+  background-color: var(--color11);
 }
 
 .botonesForm {
@@ -329,8 +332,13 @@ footer {
 
 @media (max-width: 650px) {
   .a_navegador {
-    padding: 0.2em;
+    font-size: large;
+    width: 6rem;
+    padding: 0.15em;
     margin: 0.1em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 
   .secciones {
