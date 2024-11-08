@@ -26,6 +26,7 @@ Al pie, copyright.
 
 - HTML
 - CSS
+- Para organizar las cards se utilizó flexbox ("flex-wrap: wrap;" en la sección PRODUCTOS y "overflow-x: scroll;" en la sección CONSEJOS) y grid en NOSOTROS.
 
 ## Instalación
 

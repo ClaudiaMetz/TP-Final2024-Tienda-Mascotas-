@@ -20,6 +20,7 @@
   --color13: #79e61a;
   --color14: #e66f1a;
   --color15: azure;
+  --color16: #17057b;
 }
 
 .color1 {
@@ -70,9 +71,13 @@
 .color15 {
   color: var(--color15);
 }
+.color16 {
+  color: var(--color16);
+}
 
 header {
-  padding: 2em;
+  background-image: url(./../assets/imagenes/fondo_navegador.jpg);
+  background-size: cover;
 }
 
 h1 {
@@ -154,11 +159,51 @@ h3 {
   /*color: #a55ca1;*/
 }
 
+.prod-container {
+  margin: 1.5em auto 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+
+.cardProd {
+  width: 10em;
+  height: 10em;
+  margin: 0.5em;
+  background-color: var(--color10);
+  border: 2px solid var(--color3);
+  padding: 5px;
+  border-radius: 5%;
+  position: relative;
+}
+
+.cardProd h4 {
+  /*color: #a55ca1;*/
+  font-size: large;
+  text-align: center;
+  line-height: 1;
+  margin: -0.1em;
+}
+
+.cardProd img {
+  width: 6.5em;
+  height: 6.5em;
+  display: block;
+  margin: auto 1.75em 1em;
+}
+
+.cardProd p {
+  font-size: medium;
+  text-align: center;
+  margin: 0.25em 0.25em auto;
+}
+
 .card-container {
   margin: 0 auto;
   display: flex;
   overflow-x: scroll;
-  width: 60%;
+  width: 65%;
   align-items: center;
 }
 
@@ -288,12 +333,12 @@ fieldset {
 fieldset input {
   border-radius: 10px;
   border: 1px solid var(--color2);
-  background-color: var(--color11);
+  background-color: var(--color12);
   height: 2rem;
 }
 
 fieldset textarea {
-  background-color: var(--color11);
+  background-color: var(--color12);
 }
 
 .botonesForm {
@@ -320,14 +365,102 @@ fieldset textarea {
   font-weight: bold;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1.25em;
+  padding: 1.25em;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.cardSomos {
+  /*background-color: var(--color12);*/
+  background-image: url();
+  border: 2px solid var(--color3);
+  border-radius: 5%;
+  box-shadow: 0 0.25em 0.5em var(--color1);
+  padding: 1.25em;
+  text-align: center;
+}
+
+.Somos01 {
+  background-image: url(./../assets/imagenes/QuienesSomos/cat&vet.jpg);
+  background-size: cover;
+  opacity: 50%;
+}
+
+.Somos02 {
+  background-image: url(./../assets/imagenes/QuienesSomos/dog&vet.jpg);
+  background-size: cover;
+  opacity: 60%;
+}
+
+.Somos03 {
+  background-image: url(./../assets/imagenes/QuienesSomos/donaciones.jpeg);
+  background-size: cover;
+  opacity: 60%;
+}
+
+.Somos04 {
+  background-image: url(./../assets/imagenes/QuienesSomos/adopciones.png);
+  background-size: cover;
+  opacity: 60%;
+}
+
+.Somos05 {
+  background-image: url(./../assets/imagenes/QuienesSomos/organiza.jpeg);
+  background-size: cover;
+  opacity: 60%;
+}
+
+.cardSomos h2 {
+  margin: 1em 0 0.6em;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1.2;
+  color: var(--color1);
+  -webkit-text-stroke: 1px var(--color3);
+}
+
+.cardSomos p {
+  font-size: medium;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--color16);
+}
+
 footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 3rem;
+  text-align: center;
+  height: 2.5rem;
   padding: 1rem;
   /*color: #295db1;*/
+}
+
+.float-button {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background-color: var(--color2);
+  color: var(--color3);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px var(--color16);
+  transition: background-color 0.3s;
+}
+
+.float-button img {
+  width: 2em;
+}
+
+.float-button:hover {
+  background-color: var(--color10);
 }
 
 @media (max-width: 650px) {
@@ -350,6 +483,7 @@ footer {
   .parrafo_mapa {
     width: 90%;
     font-size: 0.7em;
+    text-align: justify;
   }
 
   .formulario_contacto {
@@ -364,6 +498,7 @@ footer {
   .form-container input,
   .form-container textarea {
     width: 100%;
+    margin-top: -15px;
     margin-bottom: 1rem;
   }
 
@@ -387,6 +522,10 @@ footer {
 
   footer .fa-copyright {
     display: none;
+  }
+
+  .float-button {
+    padding: 10px;
   }
 }
 
@@ -416,13 +555,13 @@ footer {
     display: none;
   }
 
+  .parrafo_mapa {
+    font-size: 0.3em;
+  }
+
   .form-container {
     margin-top: 1em;
     margin-bottom: 1em;
-  }
-
-  footer .fa-copyright {
-    display: none;
   }
 }
 
@@ -453,10 +592,6 @@ footer {
   .formulario_contacto input,
   .formulario_contacto textarea {
     font-size: 14px;
-  }
-
-  footer .fa-copyright {
-    display: none;
   }
 }
 /*---------------------------------*/
