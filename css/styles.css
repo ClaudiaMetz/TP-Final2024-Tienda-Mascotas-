@@ -426,8 +426,12 @@ fieldset textarea {
 .cardSomos p {
   font-size: medium;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
   color: var(--color16);
+}
+
+.pSomos {
+  line-height: 1;
 }
 
 footer {
@@ -480,7 +484,8 @@ footer {
   }
 
   .mapa,
-  .parrafo_mapa {
+  .parrafo_mapa,
+  .pSomos {
     width: 90%;
     font-size: 0.7em;
     text-align: justify;
@@ -532,10 +537,12 @@ footer {
 @media (max-width: 420px) {
   h1 {
     font-size: 200%;
+    -webkit-text-stroke: 1px var(--color12);
   }
 
   h2 {
     font-size: 1.2em;
+    -webkit-text-stroke: 1px var(--color12);
   }
 
   .card p {
@@ -555,7 +562,8 @@ footer {
     display: none;
   }
 
-  .parrafo_mapa {
+  .parrafo_mapa,
+  .pSomos {
     font-size: 0.3em;
   }
 

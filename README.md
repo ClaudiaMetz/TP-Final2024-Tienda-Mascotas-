@@ -10,7 +10,7 @@ Está estructurada en 5 secciones:
 - Contacto
 - Nosotros
 
-_Productos:_ Ofrece algunos artículos que puedes ser de interés para los visitantes del sitio.
+_Productos:_ Ofrece algunos productos que puedes ser de interés para los visitantes del sitio.
 
 _Cuidados y Consejos:_ Despliega 5 cards con recomendaciones para el bienestar de las mascotas, como alimentación balanceada, agua fresca, visitas veterinarias regulares, ejercicio diario e higiene y despliega otras 5 cards con tips para mejorar la relación con las mascotas, incluyendo refuerzo positivo, consistencia, socialización temprana, rutina establecida y entrenamiento de obediencia.
 
@@ -18,7 +18,7 @@ _Visitanos:_ Información sobre la ubicación y horario del establecimiento, inv
 
 _Contacto:_ Un formulario para que nos hagas llegar tus dudas, consultas y/o comentarios.
 
-_Nosotros:_ Breve descripción de nuestra fundación, propósito y expectativas a futuro.
+_Nosotros:_ Breve descripción de nuestra fundación, propósito e integrantes.
 
 Al pie, copyright.
 
