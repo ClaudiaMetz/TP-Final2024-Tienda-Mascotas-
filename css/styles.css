@@ -71,6 +71,21 @@ hr {
   padding: 1.5em;
 }
 
+#cart-icon {
+  position: relative;
+}
+
+#cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffc107;
+  color: black;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
 .secciones h2,
 h3 {
   /*color: #a55ca1;*/

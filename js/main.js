@@ -85,37 +85,57 @@ const dataSave = JSON.parse(localStorage.getItem("productos"));
 function renderCards(cards) {
   const container = document.querySelector(".prod-container");
   container.innerHTML = ""; // Limpiar el contenedor
-
   for (let i = 0; i < cards.length; i += 3) {
     const row = document.createElement("div");
     row.className = "row";
-
     for (let j = i; j < i + 3 && j < cards.length; j++) {
       const card = cards[j];
       const cardElement = document.createElement("div");
       cardElement.className = "cardProd col-md-4";
-      cardElement.innerHTML = `
-        <img src="${card.img}" alt="${card.title}">
-        <h4>${card.title}</h4>
-        <p>${card.text}</p>
-        <p>Precio: $${card.price}</p>
-        <button onclick="addToCart(${j})">¡Lo  quiero!</button>
-      `;
+      cardElement.innerHTML = ` <img src="${card.img}" alt="${card.title}"> <h4>${card.title}</h4> <p>${card.text}</p> <p>Precio: $${card.price}</p> <button onclick="addToCart(${j})">Agregar al carrito</button> `;
       row.appendChild(cardElement);
     }
-
     container.appendChild(row);
   }
-}
-
-// Función para agregar productos al carrito
+} // Función para agregar productos al carrito
 let cart = [];
 
 function addToCart(index) {
   const product = dataSave[index];
   cart.push(product);
   console.log("Producto agregado al carrito:", product);
+  updateCartCount();
+  updateCartModal();
+} // Función para actualizar el contador del carrito
+function updateCartCount() {
+  const cartCount = document.getElementById("cart-count");
+  cartCount.textContent = cart.length;
+}
+
+// Función para actualizar el modal del carrito
+function updateCartModal() {
+  const cartItems = document.getElementById("cart-items");
+  cartItems.innerHTML = ""; // Limpiar el contenido del modal
+  cart.forEach((product, index) => {
+    const listItem = document.createElement("li");
+    listItem.className = "list-group-item";
+    listItem.innerHTML = ` <div class="d-flex justify-content-between align-items-center"> <div> <h5>${product.title}</h5> <p>Precio: $${product.price}</p> </div> <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Eliminar</button> </div> `;
+    cartItems.appendChild(listItem);
+  });
+}
+
+// Función para eliminar productos del carrito
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  updateCartCount();
+  updateCartModal();
 }
 
 // Llamar a la función para renderizar las cards
 renderCards(dataSave);
+
+// Evento para abrir el modal del carrito
+document.getElementById("cart-icon").addEventListener("click", function () {
+  const cartModal = new bootstrap.Modal(document.getElementById("cartModal"));
+  cartModal.show();
+});

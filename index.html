@@ -66,9 +66,13 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link color3 btn btn-outline-warning fw-bold" href="#"
+          <a
+            class="nav-link color3 btn btn-outline-warning fw-bold"
+            id="cart-icon"
+            href="#"
             ><i class="fa-solid fa-cart-shopping"></i
-          ></a>
+            ><span id="cart-count" class="badge badge-warning">0</span></a
+          >
         </li>
       </ul>
     </header>
@@ -299,6 +303,47 @@
           donaciones.
         </p>
       </section>
+      <!-- Modal del Carrito -->
+      <div
+        class="modal fade"
+        id="cartModal"
+        tabindex="-1"
+        aria-labelledby="cartModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartModalLabel">
+                Carrito de Compras
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul id="cart-items" class="list-group">
+                <!-- Los productos del carrito se agregarán aquí -->
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">
+                Proceder al Pago
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <hr />
     <footer class="color1">
