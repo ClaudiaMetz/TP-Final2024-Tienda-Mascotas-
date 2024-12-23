@@ -1,0 +1,77 @@
+data cards = [
+    {
+      img: "./assets/imagenes/Productos/peluches.jpeg",
+      tittle: "Peluches",
+      text: "",
+      price: "9990",
+    },
+    {
+      img: "./assets/imagenes/Productos/bebedero_fuente.jpeg",
+      tittle: "Bebedero",
+      text: "",
+      price: "25500",
+    },
+    {
+      img: "./assets/imagenes/Productos/mordedor_goma.webp",
+      tittle: "Mordedor",
+      text: "",
+      price: "2490",
+    },
+    {
+      img: "./assets/imagenes/Productos/raton_multicolor.jpeg",
+      tittle: "Ratones",
+      text: "",
+      price: "4360",
+    },
+    {
+      img: "./assets/imagenes/Productos/potes_plasticos.jpeg",
+      tittle: "Potes",
+      text: "",
+      price: "7320",
+    },
+    {
+      img: "./assets/imagenes/Productos/juguete_interactivo.jpg",
+      tittle: "Juguete 01",
+      text: "",
+      price: "23160",
+    },
+    {
+      img: "./assets/imagenes/Productos/alfombra_olfativa.jpg",
+      tittle: "Alfombra",
+      text: "",
+      price: "7590",
+    },
+    {
+      img: "./assets/imagenes/Productos/pez_electrico.jpg",
+      tittle: "Pez Eléctrico",
+      text: "",
+      price: "28690",
+    },
+    {
+      img: "./assets/imagenes/Productos/comedero_automatico.jpg",
+      tittle: "Comedero 01",
+      text: "",
+      price: "15380",
+    },
+    {
+      img: "./assets/imagenes/Productos/comedero_elevado.jpeg",
+      tittle: "Comedero 02",
+      text: "",
+      price: "14980",
+    },
+  ]; // Esta es la lista para todas las cardProds cargadas hasta ahora
+
+const nuevoProd = {
+    "name": 'xxx',
+    "description": 'xxx'
+}
+
+data.push(nuevoProd)
+
+const jsonStr = JSON.stringify(data)
+
+localStorage.setItem('productos', jsonStr)
+
+const dataSave = localStorage.getItem('productos')
+
+ó const dataSave = localStorage.getItem('productos')

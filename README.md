@@ -2,23 +2,22 @@
 
 La página tiene una sección de venta de artículos para mascotas. También ofrece a los poseedores de mascotas una serie de cuidados básicos que siempre conviene tener en cuenta.
 
-Está estructurada en 5 secciones:
+Está estructurada en 4 secciones y un carrito de compras:
 
 - Productos
-- Cuidados y Consejos
 - Visitanos
 - Contacto
-- Nosotros
+- Quienes somos
 
 _Productos:_ Ofrece algunos productos que puedes ser de interés para los visitantes del sitio.
-
-_Cuidados y Consejos:_ Despliega 5 cards con recomendaciones para el bienestar de las mascotas, como alimentación balanceada, agua fresca, visitas veterinarias regulares, ejercicio diario e higiene y despliega otras 5 cards con tips para mejorar la relación con las mascotas, incluyendo refuerzo positivo, consistencia, socialización temprana, rutina establecida y entrenamiento de obediencia.
 
 _Visitanos:_ Información sobre la ubicación y horario del establecimiento, invitando a los usuarios a visitarlo. Incluye un mapa y accesos a nuestras redes sociales.
 
 _Contacto:_ Un formulario para que nos hagas llegar tus dudas, consultas y/o comentarios.
 
-_Nosotros:_ Breve descripción de nuestra fundación, propósito e integrantes.
+_Quienes somos:_ Breve descripción de nuestra fundación, propósito e integrantes.
+
+Carrito de compras:
 
 Al pie, copyright.
 
@@ -26,14 +25,14 @@ Al pie, copyright.
 
 - HTML
 - CSS
-- Para organizar las cards se utilizó flexbox ("flex-wrap: wrap;" en la sección PRODUCTOS y "overflow-x: scroll;" en la sección CONSEJOS) y grid en NOSOTROS.
+- Para organizar las cards se utilizó flexbox ("flex-wrap: wrap;" en la sección PRODUCTOS) y grid en NOSOTROS.
 
 ## Instalación
 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/ClaudiaMetz/TP-Final2024-Tienda-Mascotas-
+   git clone https://github.com/ClaudiaMetz/T_Integrador-con-bootstrap_2024
 
    ```
 

@@ -2,26 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Titillium Web", sans-serif;
-  cursor: default;
-  background-color: #d1eae7;
-  /*background-image: url(../assets/imagenes/fondo-patitas-celeste.jpg);*/
   --color1: #1c23a5;
   --color2: #634aef;
   --color3: #e873b9;
-  --color4: #ffc09b;
-  --color5: #f2e9b2;
-  --color6: rgb(135, 185, 225);
-  --hover-color9: gold;
-  --color7: #e8b4f8;
-  --color8: #edc0c7;
-  --color9: #ddabec;
-  --color10: #e9c7ec;
-  --color11: #cce9f0;
-  --color12: #edf4d2;
-  --color13: #79e61a;
-  --color14: #e66f1a;
-  --color15: azure;
-  --color16: #17057b;
+  /*--color4: #e9c7ec;*/
+  --color4: #c4cee4;
+  --color5: #edf4d2;
+  --color6: #79e61a;
+  --color7: #e66f1a;
+  --color8: azure;
+  --color9: #17057b;
 }
 
 .color1 {
@@ -51,30 +41,6 @@
 .color9 {
   color: var(--color9);
 }
-.color9:hover {
-  color: var(--hover-color9);
-}
-.color10 {
-  color: var(--color10);
-}
-.color11 {
-  color: var(--color11);
-}
-.color12 {
-  color: var(--color12);
-}
-.color13 {
-  color: var(--color13);
-}
-.color14 {
-  color: var(--color14);
-}
-.color15 {
-  color: var(--color15);
-}
-.color16 {
-  color: var(--color16);
-}
 
 header {
   background-image: url(./../assets/imagenes/fondo_navegador.jpg);
@@ -82,7 +48,8 @@ header {
 }
 
 h1 {
-  font-size: 300%;
+  padding-top: 0.5em;
+  font-size: 250%;
   line-height: 0.85;
   /*color: #295db1;*/
 }
@@ -94,49 +61,14 @@ h1 {
   text-align: center;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: center;
-}
-
-.ul_navegador {
-  list-style-type: none;
-  padding: 0.1em;
-}
-
-.li_navegador {
-  display: inline-block;
-  margin-right: 0.3em;
-}
-
-.a_navegador {
-  text-decoration: none;
-  font-size: x-large;
-  /*color: rgb(167, 196, 220);*/
-  background-color: var(--color2);
-  padding: 0.3em;
-  border-radius: 10%;
-  width: 7rem;
-  display: inline-block;
-  text-align: center;
-  justify-content: space-between;
-}
-
-.a_navegador:hover {
-  /*color: gold;*/
-  font-weight: bold;
-  cursor: url(./../assets/imagenes/pata_cursor.png), auto;
-}
-
 hr {
-  /*color: #295db1;*/
   border-color: var(--color2);
   border-width: 2px;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .secciones {
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .secciones h2,
@@ -153,9 +85,9 @@ h3 {
 }
 
 .secciones p {
-  width: 80%;
+  width: 85%;
   margin: auto;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-bottom: 0.5em;
   /*color: #a55ca1;*/
 }
@@ -172,7 +104,7 @@ h3 {
   width: 10em;
   height: 10em;
   margin: 0.5em;
-  background-color: var(--color10);
+  background-color: var(--color4);
   border: 2px solid var(--color3);
   padding: 5px;
   border-radius: 5%;
@@ -188,8 +120,8 @@ h3 {
 }
 
 .cardProd img {
-  width: 6.5em;
-  height: 6.5em;
+  width: 6em;
+  height: 5.5em;
   display: block;
   margin: auto 1.75em 1em;
 }
@@ -198,63 +130,6 @@ h3 {
   font-size: medium;
   text-align: center;
   margin: 0.25em 0.25em auto;
-}
-
-.card-container {
-  margin: 0 auto;
-  display: flex;
-  overflow-x: scroll;
-  width: 65%;
-  align-items: center;
-}
-
-.card {
-  margin-top: 1em;
-  background-color: var(--color7);
-  border: 2px solid var(--color6);
-  padding: 5px;
-  border-radius: 5%;
-  position: relative;
-}
-
-.card img {
-  width: 9em;
-  height: 9em;
-  display: block;
-  margin: 0 auto;
-}
-
-.card h4 {
-  /*color: #a55ca1;*/
-  background-color: var(--color7);
-  font-size: large;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.card p {
-  /*color: #edc0c7;*/
-  font-size: medium;
-  text-align: center;
-  line-height: 1;
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color2);
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  transition: opacity 0.3s;
-}
-
-.card:hover {
-  background-color: var(--color7);
-  /*box-shadow: 5px 5px 10px var(--color6);*/
-}
-
-.card:hover p {
-  display: block;
 }
 
 .secciones form {
@@ -282,7 +157,7 @@ h3 {
 
 .redes {
   width: 50%;
-  background-color: var(--color10);
+  background-color: var(--color4);
   border: 2px solid var(--color1);
   padding: 1em;
   display: flex;
@@ -310,8 +185,8 @@ h3 {
 
 .formulario_contacto {
   margin: 2rem;
-  padding: 1em 2em 2em 2em;
-  background-color: var(--color10);
+  padding: 2em;
+  background-color: var(--color4);
   border: 2px solid var(--color1);
   border-radius: 10px;
 }
@@ -324,7 +199,7 @@ h3 {
 
 fieldset {
   border-color: var(--color2);
-  /*background-color: var(--color10);*/
+  /*background-color: var(--color4);*/
   background-image: url(../assets/imagenes/fondo-patitas-celeste.jpg);
   padding: 0 3em 2em;
   border-radius: 10px;
@@ -335,12 +210,12 @@ fieldset {
 fieldset input {
   border-radius: 10px;
   border: 1px solid var(--color2);
-  background-color: var(--color15);
+  background-color: var(--color8);
   height: 2rem;
 }
 
 fieldset textarea {
-  background-color: var(--color15);
+  background-color: var(--color8);
 }
 
 .botonesForm {
@@ -352,18 +227,18 @@ fieldset textarea {
 }
 
 .submit {
-  background-color: var(--color13);
+  background-color: var(--color6);
   /*color: #295db1;*/
 }
 
 .reset {
-  background-color: var(--color14);
+  background-color: var(--color7);
   /*color: #295db1;*/
 }
 
 .submit:hover,
 .reset:hover {
-  color: var(--color15);
+  color: var(--color8);
   font-weight: bold;
 }
 
@@ -377,7 +252,7 @@ fieldset textarea {
 }
 
 .cardSomos {
-  /*background-color: var(--color12);*/
+  /*background-color: var(--color5);*/
   background-image: url();
   border: 2px solid var(--color3);
   border-radius: 5%;
@@ -430,7 +305,7 @@ fieldset textarea {
   font-weight: bold;
   line-height: 1;
   color: black;
-  -webkit-text-stroke: 1px var(--color13);
+  -webkit-text-stroke: 1px var(--color4);
 }
 
 .pSomos {
@@ -458,7 +333,7 @@ footer {
   border-radius: 50%;
   padding: 10px;
   text-align: center;
-  box-shadow: 2px 2px 5px var(--color16);
+  box-shadow: 2px 2px 5px var(--color9);
   transition: background-color 0.3s;
 }
 
@@ -467,7 +342,7 @@ footer {
 }
 
 .float-button:hover {
-  background-color: var(--color10);
+  background-color: var(--color4);
 }
 
 @media (max-width: 650px) {
@@ -540,12 +415,12 @@ footer {
 @media (max-width: 420px) {
   h1 {
     font-size: 200%;
-    -webkit-text-stroke: 1px var(--color12);
+    -webkit-text-stroke: 1px var(--color5);
   }
 
   h2 {
     font-size: 1.2em;
-    -webkit-text-stroke: 1px var(--color12);
+    -webkit-text-stroke: 1px var(--color5);
   }
 
   .card p {

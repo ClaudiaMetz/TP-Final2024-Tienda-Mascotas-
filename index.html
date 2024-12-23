@@ -13,258 +13,153 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Tienda Mascotas</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <a href="#top" class="float-button"><img src="./assets/imagenes/Arrow-Up.png" alt=""></a> 
+    <a href="#top" class="float-button"
+      ><img src="./assets/imagenes/Arrow-Up.png" alt=""
+    /></a>
     <a id="top"></a>
     <header>
       <div class="titulo_header color1">
         <h1 class="color1">Tienda Mascotas</h1>
-        <h2>🐾 Porque las amamos <br> y merecen lo mejor 🐾</h2>
+        <h2>
+          🐾 Porque las amamos <br />
+          y merecen lo mejor 🐾
+        </h2>
       </div>
-      <nav class="nav-container">
-        <ul class="ul_navegador">
-          <li class="li_navegador">
-            <a href="#Productos" class="a_navegador color9">Productos</a>
-          </li>
-          <li class="li_navegador">
-            <a href="#CuidadosYConsejos" class="a_navegador color9">Consejos</a>
-          </li>
-          <li class="li_navegador">
-            <a href="#Visitanos" class="a_navegador color9">Visitanos</a>
-          </li>
-          <li class="li_navegador">
-            <a href="#Contacto" class="a_navegador color9">Contacto</a>
-          </li>
-          <li class="li_navegador">
-            <a href="#Nosotros" class="a_navegador color9">Nosotros</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link color3 btn btn-outline-warning fw-bold"
+            href="#Productos"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link color3 btn btn-outline-warning fw-bold"
+            href="#Visitanos"
+            >Visitanos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link color3 btn btn-outline-warning fw-bold"
+            href="#Contacto"
+            >Contacto</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link color3 btn btn-outline-warning fw-bold"
+            href="#Nosotros"
+            >Quienes Somos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color3 btn btn-outline-warning fw-bold" href="#"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
+      </ul>
     </header>
     <hr />
     <main>
       <section class="secciones" id="Productos">
         <h2 class="color2">Productos</h2>
-        <h3 class="color2">Podés encargar lo que quieras, pagar online y recibirlo en casa</h3>
+        <h3 class="color2">
+          Podés encargar lo que quieras, pagar online y recibirlo en casa
+        </h3>
         <div class="prod-container">
-          <div class="cardProd" id="productos001">
+          <!--<div class="cardProd" id="productos001">
             <h4 class="color2">Peluches</h4>
-            <p class="color1">
-            $ Precio
-            </p>
+            <p class="color1">$ Precio</p>
             <img
               src="./assets/imagenes/Productos/peluches.jpeg"
               alt="peluches para mascotas"
             />
           </div>
-            <div class="cardProd" id="productos002">
-              <h4 class="color2">Bebedero</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/bebedero_fuente.jpeg"
-                alt="bebedero fuente para mascotas"
-              />
-            </div>
-            <div class="cardProd" id="productos003">
-              <h4 class="color2">Mordedor</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/mordedor_goma.webp"
-                alt="mordedor de goma para perros"
-            />
-            </div>
-            <div class="cardProd" id="productos004">
-              <h4 class="color2">Ratones</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/raton_multicolor.jpeg"
-                alt="ratón multicolor para gatos"
-              /></div>
-            <div class="cardProd" id="productos005">
-              <h4 class="color2">Potes</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/potes_plasticos.jpeg"
-                alt="potes plásticos para comida o agua"
-              /></div>
-            <div class="cardProd" id="productos006">
-              <h4 class="color2">Juguete Interactivo</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/juguete_interactivo.jpg"
-                alt="jueguete interactivo para gatos"
-              /></div>
-            <div class="cardProd" id="productos007">
-              <h4 class="color2">Alfombra</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/alfombra_olfativa.jpg"
-                alt="alfombra olfativa para perros"
-              /></div>
-            <div class="cardProd" id="productos008">
-              <h4 class="color2">Pez Eléctrico</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/pez_electrico.jpg"
-                alt="juguete, pez electrico con movimiento"
-              /></div>
-            <div class="cardProd" id="productos009">
-              <h4 class="color2">Comedero Autom.</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/comedero_automatico.jpg"
-                alt="comedero automático"
-              /></div>
-            <div class="cardProd" id="productos010">
-              <h4 class="color2">Comedero Elevado</h4>
-              <p class="color1">
-              $ Precio
-              </p>
-              <img
-                src="./assets/imagenes/Productos/comedero_elevado.jpeg"
-                alt="comedero elevado"
-              /></div>
-        </div>
-      </section>
-      <hr />
-      <section class="secciones" id="CuidadosYConsejos">
-        <h2 class="color2">Cuidados y Consejos</h2>
-        <h3 class="color2">
-          Aquí te dejamos una serie de recomendaciones para el bienestar 
-          de tus mascotas y también te acercamos algunos tips para 
-          relacionarte mejor con ellas.
-        </h3>
-        <div class="card-container">
-          <div class="card" id="cuidadosCard1">
-            <h4 class="color2">Alimentación <br> Balanceada</h4>
-            <p class="color8">
-              Proporcionales una dieta nutritiva y equilibrada según las
-              necesidades específicas de tus mascotas.
-            </p>
+          <div class="cardProd" id="productos002">
+            <h4 class="color2">Bebedero</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/dieta_Nutritiva_y_Equilibrada.png"
-              alt="dieta_Nutritiva_y_Equilibrada"
+              src="./assets/imagenes/Productos/bebedero_fuente.jpeg"
+              alt="bebedero fuente para mascotas"
             />
           </div>
-          <div class="card" id="cuidadosCard2">
-            <h4 class="color2">Agua Fresca <br> Siempre</h4>
-            <p class="color8">
-              Asegurate de que siempre tengan agua limpia y fresca disponible.
-            </p>
+          <div class="cardProd" id="productos003">
+            <h4 class="color2">Mordedor</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/agua_Fresca_Siempre_Disponible.jpeg"
-              alt="agua_Fresca_Siempre_Disponible"
+              src="./assets/imagenes/Productos/mordedor_goma.webp"
+              alt="mordedor de goma para perros"
             />
           </div>
-          <div class="card" id="cuidadosCard3">
-            <h4 class="color2">Visitas <br> Veterinarias</h4>
-            <p class="color8">
-              Programá revisiones periódicas para chequeos de salud y vacunas.
-            </p>
+          <div class="cardProd" id="productos004">
+            <h4 class="color2">Ratones</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/visitas_Veterinarias_Regulares.jpeg"
-              alt="visitas_Veterinarias_Regulares"
+              src="./assets/imagenes/Productos/raton_multicolor.jpeg"
+              alt="ratón multicolor para gatos"
             />
           </div>
-          <div class="card" id="cuidadosCard4">
-            <h4 class="color2">Ejercicio <br> Diario</h4>
-            <p class="color8">
-              Proporcionales tiempo diario para actividades físicas y mentales
-              que se adapten a la especie y edad de tus mascotas.
-            </p>
+          <div class="cardProd" id="productos005">
+            <h4 class="color2">Potes</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/ejercicio_Diario.jpeg"
-              alt="ejercicio_Diario"
+              src="./assets/imagenes/Productos/potes_plasticos.jpeg"
+              alt="potes plásticos para comida o agua"
             />
           </div>
-          <div class="card" id="cuidadosCard5">
-            <h4 class="color2">Higiene <br> Regular</h4>
-            <p class="color8">
-              Báñalos, cepillalos y cortá las uñas de tu mascota según sea
-              necesario.
-            </p>
+          <div class="cardProd" id="productos006">
+            <h4 class="color2">Juguete 01</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/bañalos_Cepillalos_y_Corta_sus_Uñas.jpeg"
-              alt="bañalos_Cepillalos_y_Corta_sus_Uñas"
+              src="./assets/imagenes/Productos/juguete_interactivo.jpg"
+              alt="jueguete interactivo para gatos"
             />
           </div>
-          <div class="card" id="consejosCard1">
-            <h4 class="color2">Refuerzo <br> Positivo</h4>
-            <p class="color8">
-              Recompensá a tus mascotas con golosinas, caricias o elogios cuando
-              muestren un buen comportamiento. Esto ayuda a reforzar las
-              conductas deseadas.
-            </p>
+          <div class="cardProd" id="productos007">
+            <h4 class="color2">Alfombra</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/refuerzo_Positivo.jpeg"
-              alt="refuerzo_Positivo"
+              src="./assets/imagenes/Productos/alfombra_olfativa.jpg"
+              alt="alfombra olfativa para perros"
             />
           </div>
-          <div class="card" id="consejosCard2">
-            <h4 class="color2">Mantener <br> Consistencia</h4>
-            <p class="color8">
-              Sé consistente con las reglas y comandos. Las mascotas aprenden
-              mejor cuando las expectativas son claras y constantes.
-            </p>
-            <img src="./assets/imagenes/ConsejosYCuidados/consistencia.jpeg" alt="consistencia" />
-          </div>
-          <div class="card" id="consejosCard3">
-            <h4 class="color2">Socialización <br> Temprana</h4>
-            <p class="color8">
-              Exponer a tu mascota a diferentes personas, animales y entornos
-              desde una edad temprana puede ayudar a prevenir problemas de
-              comportamiento y ansiedad.
-            </p>
+          <div class="cardProd" id="productos008">
+            <h4 class="color2">Pez Eléctrico</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/socializacion_Temprana.jpeg"
-              alt="socialización_Temprana"
+              src="./assets/imagenes/Productos/pez_electrico.jpg"
+              alt="juguete, pez electrico con movimiento"
             />
           </div>
-          <div class="card" id="consejosCard4">
-            <h4 class="color2">Rutina <br> </button> Establecida</h4>
-            <p class="color8">
-              Mantené una rutina diaria para tus mascotas, incluyendo horarios
-              de alimentación, paseos y tiempo de juego. Las mascotas se sienten
-              más seguras y tranquilas con una rutina predecible.
-            </p>
+          <div class="cardProd" id="productos009">
+            <h4 class="color2">Comedero 01</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/rutina_Establecida.jpeg"
-              alt="rutina_Establecida"
+              src="./assets/imagenes/Productos/comedero_automatico.jpg"
+              alt="comedero automático"
             />
           </div>
-          <div class="card" id="consejosCard5">
-            <h4 class="color2">Entrenamiento <br> de Obediencia</h4>
-            <p class="color8">
-              Dedicá tiempo a entrenar a tus mascotas en comandos básicos como
-              “sentado”, “quieto” y “ven”. Esto no sólo mejorará el
-              comportamiento, sino que también fortalecerá el vínculo con tus
-              mascotas.
-            </p>
+          <div class="cardProd" id="productos010">
+            <h4 class="color2">Comedero 02</h4>
+            <p class="color1">$ Precio</p>
             <img
-              src="./assets/imagenes/ConsejosYCuidados/entrenamiento_de_obediencia.jpeg"
-              alt="entrenamiento_de_obediencia"
+              src="./assets/imagenes/Productos/comedero_elevado.jpeg"
+              alt="comedero elevado"
             />
-          </div>
+          </div> -->
         </div>
       </section>
       <hr />
@@ -362,42 +257,57 @@
       <hr />
       <section class="secciones" id="Nosotros">
         <h2 class="color2">Quienes somos</h2>
-        <div class="grid-container"> 
-          <div class="cardSomos Somos01">  
-            <h2>Dra. Ana Lipwik</h2> 
-            <p>La Dra. dona su tiempo 3 veces a la 
-              semana para atender a nuestros rescataditos.</p> 
-          </div> 
-          <div class="cardSomos Somos02"> 
-            <h2>Dra. Denisse Lamas</h2> 
-            <p>La Dra. dona su tiempo 2 veces a la semana 
-              para hacer castraciones.</p> 
-          </div> 
+        <div class="grid-container">
+          <div class="cardSomos Somos01">
+            <h2>Dra. Ana Lipwik</h2>
+            <p>
+              La Dra. dona su tiempo 3 veces a la semana para atender a nuestros
+              rescataditos.
+            </p>
+          </div>
+          <div class="cardSomos Somos02">
+            <h2>Dra. Denisse Lamas</h2>
+            <p>
+              La Dra. dona su tiempo 2 veces a la semana para hacer
+              castraciones.
+            </p>
+          </div>
           <div class="cardSomos Somos03">
-            <h2>Agustín Fernandez</h2> 
-            <p>Hace las fichas y se encarga del seguimiento de las adopciones.</p> 
-          </div> 
-          <div class="cardSomos Somos04"> 
-            <h2>Fermín Lanusse</h2> 
-            <p>Organiza rifas y nos muestra por las redes sociales.</p> 
-          </div> 
-          <div class="cardSomos Somos05"> 
-            <h2>Amelia de Benedictis</h2> 
-            <p>Nos organiza a todos y también lleva la parte administrativa 
-              y comercial.</p> 
-          </div> 
+            <h2>Agustín Fernandez</h2>
+            <p>
+              Hace las fichas y se encarga del seguimiento de las adopciones.
+            </p>
+          </div>
+          <div class="cardSomos Somos04">
+            <h2>Fermín Lanusse</h2>
+            <p>Organiza rifas y nos muestra por las redes sociales.</p>
+          </div>
+          <div class="cardSomos Somos05">
+            <h2>Amelia de Benedictis</h2>
+            <p>
+              Nos organiza a todos y también lleva la parte administrativa y
+              comercial.
+            </p>
+          </div>
         </div>
-        <p class="pSomos color2">Somos un grupo de personas amantes de las mascotas que nos reunimos para 
-          tratar de conseguirles una vida mejor a los animalitos callejeros. Damos servicio
-          de castraciones y atención veterinaria primaria en nuestra sede y también vendemos algunos 
-          productos para mascotas. Nuestros ingresos dependen mayormente de las rifas y 
-          donaciones.</p>
+        <p class="pSomos color2">
+          Somos un grupo de personas amantes de las mascotas que nos reunimos
+          para tratar de conseguirles una vida mejor a los animalitos
+          callejeros. Damos servicio de castraciones y atención veterinaria
+          primaria en nuestra sede y también vendemos algunos productos para
+          mascotas. Nuestros ingresos dependen mayormente de las rifas y
+          donaciones.
+        </p>
       </section>
     </main>
     <hr />
     <footer class="color1">
-      <p class="color2">©2024 - Comisión 24288 <br> Sitio construído por Claudia Metz  </p>
+      <p class="color2">
+        ©2024 - Comisión 24288 <br />
+        Sitio construído por Claudia Metz
+      </p>
     </footer>
+    <script src="./js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
