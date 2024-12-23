@@ -101,8 +101,8 @@ h3 {
 }
 
 .cardProd {
-  width: 10em;
-  height: 10em;
+  width: 12em;
+  height: 15em;
   margin: 0.5em;
   background-color: var(--color4);
   border: 2px solid var(--color3);
@@ -123,13 +123,27 @@ h3 {
   width: 6em;
   height: 5.5em;
   display: block;
-  margin: auto 1.75em 1em;
+  margin: 0.5em auto;
 }
 
 .cardProd p {
   font-size: medium;
   text-align: center;
   margin: 0.25em 0.25em auto;
+}
+
+.cardProd button {
+  display: block;
+  margin: 0.5em auto; /* Centra el botón horizontalmente */
+  padding: 10px 20px;
+  background-color: var(--color2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cardProd button:hover {
+  background-color: var(--color3);
 }
 
 .secciones form {

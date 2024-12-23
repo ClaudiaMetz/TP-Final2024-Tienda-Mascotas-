@@ -1,144 +1,121 @@
-let cards = [
+// Lista de productos
+let cardProds = [
   {
     img: "./assets/imagenes/Productos/peluches.jpeg",
-    tittle: "Peluches",
+    title: "Peluches",
     text: "",
     price: "9990",
   },
   {
     img: "./assets/imagenes/Productos/bebedero_fuente.jpeg",
-    tittle: "Bebedero",
+    title: "Bebedero",
     text: "",
     price: "25500",
   },
   {
     img: "./assets/imagenes/Productos/mordedor_goma.webp",
-    tittle: "Mordedor",
+    title: "Mordedor",
     text: "",
     price: "2490",
   },
   {
     img: "./assets/imagenes/Productos/raton_multicolor.jpeg",
-    tittle: "Ratones",
+    title: "Ratones",
     text: "",
     price: "4360",
   },
   {
     img: "./assets/imagenes/Productos/potes_plasticos.jpeg",
-    tittle: "Potes",
+    title: "Potes",
     text: "",
     price: "7320",
   },
   {
     img: "./assets/imagenes/Productos/juguete_interactivo.jpg",
-    tittle: "Juguete 01",
+    title: "Juguete 01",
     text: "",
     price: "23160",
   },
   {
     img: "./assets/imagenes/Productos/alfombra_olfativa.jpg",
-    tittle: "Alfombra",
+    title: "Alfombra",
     text: "",
     price: "7590",
   },
   {
     img: "./assets/imagenes/Productos/pez_electrico.jpg",
-    tittle: "Pez Eléctrico",
+    title: "Pez Eléctrico",
     text: "",
     price: "28690",
   },
   {
     img: "./assets/imagenes/Productos/comedero_automatico.jpg",
-    tittle: "Comedero 01",
+    title: "Comedero 01",
     text: "",
     price: "15380",
   },
   {
     img: "./assets/imagenes/Productos/comedero_elevado.jpeg",
-    tittle: "Comedero 02",
+    title: "Comedero 02",
     text: "",
     price: "14980",
   },
-]; // Esta es la lista para todas las cardProds cargadas hasta ahora
+  {
+    img: "./assets/imagenes/Productos/comedero_elevado.jpeg",
+    title: "Comedero 03",
+    text: "",
+    price: "18780",
+  },
+  {
+    img: "./assets/imagenes/Productos/comedero_elevado.jpeg",
+    title: "Comedero 04",
+    text: "",
+    price: "21680",
+  },
+];
 
-let currentStart = 0;
+// Guardar en localStorage
+const jsonStr = JSON.stringify(cardProds);
+localStorage.setItem("productos", jsonStr);
 
-//función para mostrar las cardProds en sección PRODUCTOS
+// Recuperar de localStorage
+const dataSave = JSON.parse(localStorage.getItem("productos"));
 
-function displayCards(start) {
-  let end = start + 12;
-  if (end > cards.length) end = cards.length;
+// Función para renderizar las cards en el HTML
+function renderCards(cards) {
+  const container = document.querySelector(".prod-container");
+  container.innerHTML = ""; // Limpiar el contenedor
 
-  let container = document.getElementById("card-container");
-  container.innerHTML = "";
+  for (let i = 0; i < cards.length; i += 3) {
+    const row = document.createElement("div");
+    row.className = "row";
 
-  for (let i = start; i < end; i++) {
-    let cardData = cards[i];
-    let card = document.createElement("div");
-    card.className = "card";
+    for (let j = i; j < i + 3 && j < cards.length; j++) {
+      const card = cards[j];
+      const cardElement = document.createElement("div");
+      cardElement.className = "cardProd col-md-4";
+      cardElement.innerHTML = `
+        <img src="${card.img}" alt="${card.title}">
+        <h4>${card.title}</h4>
+        <p>${card.text}</p>
+        <p>Precio: $${card.price}</p>
+        <button onclick="addToCart(${j})">¡Lo  quiero!</button>
+      `;
+      row.appendChild(cardElement);
+    }
 
-    let img = document.createElement("img");
-    img.src = cardData.img;
-    img.alt = "Imagen";
-    img.className = "card-img";
-    card.appendChild(img);
-
-    let text = document.createElement("div");
-    text.innerText = cardData.text;
-    text.className = "card-text";
-    card.appendChild(text);
-
-    container.appendChild(card);
+    container.appendChild(row);
   }
 }
 
-document.getElementById("adelante").addEventListener("click", function () {
-  if (currentStart + 12 < cards.length) {
-    currentStart += 12;
-    displayCards(currentStart);
-  }
-});
+// Función para agregar productos al carrito
+let cart = [];
 
-document.getElementById("atras").addEventListener("click", function () {
-  if (currentStart - 12 >= 0) {
-    currentStart -= 12;
-    displayCards(currentStart);
-  }
-});
-
-displayCards(currentStart);
-// Muestra las primeras 12 cards al cargar la página
-
-//------------------------------------------
-
-//función para mostrar las cards en sección ACLAMADAS
-
-function displayFourCards() {
-  var container = document.getElementById("prod-container");
-
-  container.innerHTML = "";
-
-  for (var i = 0; i < cards.length; i++) {
-    var movieDiv = document.createElement("div");
-    movieDiv.className = "movie";
-
-    var img = document.createElement("img");
-    img.src = cards[i].img;
-    img.alt = cards[i].text;
-
-    /*var p = document.createElement("p");
-    p.textContent = cards[i].text;*/
-
-    movieDiv.appendChild(img);
-    /*movieDiv.appendChild(p);*/
-
-    container.appendChild(movieDiv);
-  }
+function addToCart(index) {
+  const product = dataSave[index];
+  cart.push(product);
+  console.log("Producto agregado al carrito:", product);
 }
 
-window.onload = function () {
-  displayFourCards();
-};
-// Muestra las primeras 4 cards al cargar la página y se ve el resto corriendo la barra
-
-//--------------------------------
+// Llamar a la función para renderizar las cards
+renderCards(dataSave);
