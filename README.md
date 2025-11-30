@@ -1,4 +1,4 @@
-# Descripción del Contenido "Tienda Mascotas"
+# Descripción del Contenido 🛒 "Tienda Mascotas"
 
 La página tiene una sección de venta de artículos para mascotas y formas de visitar o contactar a la Fundación. Incluye una sección que lleva a un ‘TinderPet’, es una página para ver los rescatados en situación de adopción.
 “La sección TinderPet fue incorporada recientemente como evolución del proyecto, para mostrar rescatados en adopción con un sistema de recomendación.”
@@ -7,24 +7,33 @@ Está estructurada en 5 secciones y un carrito de compras:
 
 - Productos
 - Visitanos
+- Tinder Pet
 - Contacto
 - Quienes somos
-- TinderPet
 
 _Productos:_ Ofrece algunos productos que puedes ser de interés para los visitantes del sitio.
 
 _Visítanos:_ Información sobre la ubicación y horario del establecimiento, invitando a los usuarios a concurrir. Incluye un mapa y accesos a nuestras redes sociales.
 
+_TinderPet:_ Página enlazada que muestra rescatados adoptables, con 3 preguntas de filtro y un agente que comenta las decisiones. 
+“🆕 Esta sección fue agregada meses después del proyecto original, como mejora personal.”
+
 _Contacto:_ Un formulario para que nos hagas llegar tus dudas, consultas y/o comentarios.
 
 _Quienes somos:_ Breve descripción de nuestra fundación, propósito e integrantes.
 
-_TinderPet:_ Página enlazada que muestra rescatados adoptables, con 3 preguntas de filtro y un agente que comenta las decisiones. 
-“🆕 Esta sección fue agregada meses después del proyecto original, como mejora personal.”
-
 _Carrito de compras:_ Acumula productos, se pueden eliminar y podría llevar a pasarela de pagos.
 
 Al pie, copyright y créditos.
+
+# Descripción del Contenido 🐾 "Tinder Pet"
+
+Proyecto agregado como sección independiente:
+- Muestra adoptables con foto, nombre, tipo y descripción
+- Responsive design específico:
+  - En móviles (<432px) se ven solo nombre y foto
+  - En pantallas más grandes se muestran también tipo y descripción
+  - Layout adaptable: 1, 2, 3 o 4 columnas según el ancho
 
 ## Tecnologías Utilizadas
 
