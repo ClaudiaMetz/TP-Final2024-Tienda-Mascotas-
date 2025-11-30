@@ -56,3 +56,6 @@ Al pie, copyright y créditos.
 5. Licencia: Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 6. Contacto: Si tienes alguna pregunta, no dudes en contactarnos a través de www.linkedin.com/in/claudia-metz.
+
+
+<img width="1876" height="877" alt="image" src="https://github.com/user-attachments/assets/c38cde47-4166-4c17-b091-c8861ce3a2b9" />
