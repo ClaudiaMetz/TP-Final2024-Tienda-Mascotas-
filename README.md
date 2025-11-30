@@ -1,38 +1,45 @@
 # Descripción del Contenido "Tienda Mascotas"
 
-La página tiene una sección de venta de artículos para mascotas. También ofrece a los poseedores de mascotas una serie de cuidados básicos que siempre conviene tener en cuenta.
+La página tiene una sección de venta de artículos para mascotas y formas de visitar o contactar a la Fundación. Incluye una sección que lleva a un ‘TinderPet’, es una página para ver los rescatados en situación de adopción.
+“La sección TinderPet fue incorporada recientemente como evolución del proyecto, para mostrar rescatados en adopción con un sistema de recomendación.”
 
-Está estructurada en 4 secciones y un carrito de compras:
+Está estructurada en 5 secciones y un carrito de compras:
 
 - Productos
 - Visitanos
 - Contacto
 - Quienes somos
+- TinderPet
 
 _Productos:_ Ofrece algunos productos que puedes ser de interés para los visitantes del sitio.
 
-_Visitanos:_ Información sobre la ubicación y horario del establecimiento, invitando a los usuarios a visitarlo. Incluye un mapa y accesos a nuestras redes sociales.
+_Visítanos:_ Información sobre la ubicación y horario del establecimiento, invitando a los usuarios a concurrir. Incluye un mapa y accesos a nuestras redes sociales.
 
 _Contacto:_ Un formulario para que nos hagas llegar tus dudas, consultas y/o comentarios.
 
 _Quienes somos:_ Breve descripción de nuestra fundación, propósito e integrantes.
 
-Carrito de compras:
+_TinderPet:_ Página enlazada que muestra rescatados adoptables, con 3 preguntas de filtro y un agente que comenta las decisiones. 
+“🆕 Esta sección fue agregada meses después del proyecto original, como mejora personal.”
 
-Al pie, copyright.
+_Carrito de compras:_ Acumula productos, se pueden eliminar y podría llevar a pasarela de pagos.
+
+Al pie, copyright y créditos.
 
 ## Tecnologías Utilizadas
 
-- HTML
-- CSS
-- Para organizar las cards se utilizó flexbox ("flex-wrap: wrap;" en la sección PRODUCTOS) y grid en NOSOTROS.
+- **HTML:** Estructura principal de la página.
+- **CSS:** Estilos y organización visual; uso de flexbox en la sección *Productos* y grid en *Nosotros*.
+- **JS:** Para la lógica del carrito de compras (agregar, eliminar y acumular productos), validaciones de formularios y en la página de adopciones (filtrado de mascotas y agente que comenta las decisiones).
+- **JSON:** Para los productos y adoptables.
+
 
 ## Instalación
 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/ClaudiaMetz/T_Integrador-con-bootstrap_2024
+   git clone https://github.com/ClaudiaMetz/TP-Final2024-Tienda-Mascotas-
 
    ```
 
@@ -48,4 +55,4 @@ Al pie, copyright.
 
 5. Licencia: Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-6. Contacto: Si tienes alguna pregunta, no dudes en contactarnos a través de tu-email@ejemplo.com 😊.
+6. Contacto: Si tienes alguna pregunta, no dudes en contactarnos a través de www.linkedin.com/in/claudia-metz.
