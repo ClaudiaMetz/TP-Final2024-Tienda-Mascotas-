@@ -12,7 +12,7 @@
     />
 
     <!-- styles global -->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body class="p-4">
     <div class="container">
@@ -23,6 +23,7 @@
         <img
           id="pawly-avatar"
           src="https://th.bing.com/th/id/OIP.64TR6DW10tHd_4CtjGCerAHaE8?w=283&h=186&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+          width="150"
           class="pawly-avatar"
           alt="Pawly"
         />
@@ -36,7 +37,7 @@
       <div class="row g-3 mb-4">
         <div class="col-md-4">
           <label class="form-label fw-bold color2">Tipo</label>
-          <select id="filtroTipo" class="form-select color2">
+          <select id="filtroTipo" class="form-select color1">
             <option value="">Cualquiera</option>
             <option value="perro">Perro</option>
             <option value="gato">Gato</option>
@@ -44,7 +45,7 @@
         </div>
         <div class="col-md-4">
           <label class="form-label fw-bold color2">Tamaño</label>
-          <select id="filtroTam" class="form-select">
+          <select id="filtroTam" class="form-select color1">
             <option value="">Cualquiera</option>
             <option value="chico">Chico</option>
             <option value="mediano">Mediano</option>
@@ -53,7 +54,7 @@
         </div>
         <div class="col-md-4">
           <label class="form-label fw-bold color2">Edad</label>
-          <select id="filtroEdad" class="form-select">
+          <select id="filtroEdad" class="form-select color1">
             <option value="">Cualquiera</option>
             <option value="cachorro">Cachorro</option>
             <option value="joven">Joven</option>
@@ -72,6 +73,6 @@
     </div>
 
     <!-- tu JS dedicado -->
-    <script src="../js/adoptables.js" type="module"></script>
+    <script src="./js/adoptables.js" type="module"></script>
   </body>
 </html>
