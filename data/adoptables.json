@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luna",
+    "tipo": "gato",
+    "tam": "chico",
+    "edad": "adulto",
+    "img": "https://placekitten.com/300/260",
+    "desc": "Dulce y mimosa, ideal para departamento."
+  },
+  {
+    "id": 2,
+    "nombre": "Toby",
+    "tipo": "perro",
+    "tam": "mediano",
+    "edad": "cachorro",
+    "img": "https://placedog.net/500/400",
+    "desc": "Juguetón y leal; necesita tardes de juegos."
+  },
+  {
+    "id": 3,
+    "nombre": "Mora",
+    "tipo": "perro",
+    "tam": "grande",
+    "edad": "adulto",
+    "img": "https://placedog.net/401/401",
+    "desc": "Tranquilo y protector, buen compañero de casa."
+  },
+  {
+    "id": 4,
+    "nombre": "Nina",
+    "tipo": "gato",
+    "tam": "chico",
+    "edad": "senior",
+    "img": "https://placekitten.com/301/260",
+    "desc": "Senior calmada, ideal para compañía y mimos."
+  }
+]
