@@ -511,9 +511,10 @@ footer {
     font-size: 14px;
   }
 }
-/*---------------------------------*/
 
-/* TINDER PET */
+/* ---------------------------------------------- */
+/* ----------   TINDER PET (Adoptables)  -------- */
+/* ---------------------------------------------- */
 
 .adoptables-page {
   background: linear-gradient(
@@ -522,7 +523,7 @@ footer {
     ),
     url("https://th.bing.com/th/id/OIP.BJLPM_8LblJ3v05HPB6QWAHaDt?w=339&h=175&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3")
       no-repeat center center fixed;
-  background-size: cover; /* hace que se expanda y no se repita */
+  background-size: cover; /* <-- hace que se expanda y no se repita */
 }
 
 .tinderPet {
@@ -544,28 +545,84 @@ footer {
   border-radius: 16px;
   max-width: 420px;
   font-weight: 600;
-  color: #333;
+  color: var(--color9);
 }
 
+/* --------------------------------------------- */
+/* -----------   CARDS ADOPTABLES   ------------ */
+/* --------------------------------------------- */
+
+/* Efecto hover para arriba */
 .card {
   transition: transform 0.25s ease;
-  background-color: #f1f5e2;
+  background-color: var(--color5);
 }
 
 .card:hover {
   transform: translateY(-6px);
 }
 
+/* ------- Imágenes con fade + responsive ------- */
+.img-animal {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* clases aplicadas por JS */
+.img-animal.fade-out {
+  opacity: 0;
+}
+
+.img-animal.fade-in {
+  opacity: 1;
+}
+
+/* --------------------------------------------- */
+/* ---   Ajuste para igualar altura de cards  --- */
+/* --------------------------------------------- */
+
+/* cada columna Bootstrap actúa como contenedor flex */
+#listaAdoptables .filtroPawly {
+  display: flex;
+}
+
+/* la card ocupa toda la altura disponible */
+#listaAdoptables .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* el body crece para empujar los textos largos */
+#listaAdoptables .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* hace que la descripción ocupe el espacio sobrante */
+#listaAdoptables .card-body p {
+  flex-grow: 1;
+}
+
+/* --------------------------------------------- */
+/* --- Responsive para textos dentro de cards --- */
+/* --------------------------------------------- */
+
 @media (max-width: 432px) {
   .card-body {
-    padding: 0.5rem; /* reduce padding interno */
+    padding: 0.5rem;
   }
 
   .card-body p {
-    display: none; /* oculta todos los párrafos dentro de la card */
+    display: none; /* <-- oculta descripciones en pantallas pequeñas */
   }
 
   .card {
-    margin: 0 auto; /* centra la card en el contenedor */
+    margin: 0 auto;
   }
 }

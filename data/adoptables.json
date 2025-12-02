@@ -5,7 +5,10 @@
     "tipo": "gato",
     "tam": "chico",
     "edad": "adulto",
-    "img": "https://placekitten.com/300/260",
+    "fotos": [
+      "https://placekitten.com/300/260",
+      "https://placekitten.com/301/261"
+    ],
     "desc": "Dulce y mimosa, ideal para departamento."
   },
   {
@@ -14,7 +17,7 @@
     "tipo": "perro",
     "tam": "mediano",
     "edad": "cachorro",
-    "img": "https://placedog.net/500/400",
+    "fotos": ["https://placedog.net/500/400"],
     "desc": "Juguetón y leal; necesita tardes de juegos."
   },
   {
@@ -23,7 +26,7 @@
     "tipo": "perro",
     "tam": "grande",
     "edad": "adulto",
-    "img": "https://placedog.net/401/401",
+    "fotos": ["https://placedog.net/401/401", "https://placedog.net/402/402"],
     "desc": "Tranquilo y protector, buen compañero de casa."
   },
   {
@@ -32,7 +35,7 @@
     "tipo": "gato",
     "tam": "chico",
     "edad": "senior",
-    "img": "https://placekitten.com/301/260",
+    "fotos": ["https://placekitten.com/301/260"],
     "desc": "Senior calmada, ideal para compañía y mimos."
   }
 ]
