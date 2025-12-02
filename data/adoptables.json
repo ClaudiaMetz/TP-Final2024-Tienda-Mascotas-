@@ -1,41 +1,107 @@
 [
   {
     "id": 1,
-    "nombre": "Luna",
+    "nombre": "Blanca",
     "tipo": "gato",
-    "tam": "chico",
-    "edad": "adulto",
+    "tam": "grande",
+    "edad": "joven",
     "fotos": [
-      "https://placekitten.com/300/260",
-      "https://placekitten.com/301/261"
+      "../assets/imagenesAdoptables/Blanca01.png",
+      "../assets/imagenesAdoptables/Blanca02.png"
     ],
     "desc": "Dulce y mimosa, ideal para departamento."
   },
   {
     "id": 2,
-    "nombre": "Toby",
+    "nombre": "Caramelo",
     "tipo": "perro",
     "tam": "mediano",
     "edad": "cachorro",
-    "fotos": ["https://placedog.net/500/400"],
+    "fotos": ["../assets/imagenesAdoptables/Caramelo01.png"],
     "desc": "Juguetón y leal; necesita tardes de juegos."
   },
   {
     "id": 3,
-    "nombre": "Mora",
+    "nombre": "Negrito",
     "tipo": "perro",
     "tam": "grande",
     "edad": "adulto",
-    "fotos": ["https://placedog.net/401/401", "https://placedog.net/402/402"],
+    "fotos": [
+      "../assets/imagenesAdoptables/Negrito01.png",
+      "../assets/imagenesAdoptables/Negrito02.png"
+    ],
     "desc": "Tranquilo y protector, buen compañero de casa."
   },
   {
     "id": 4,
-    "nombre": "Nina",
+    "nombre": "Pelusa",
     "tipo": "gato",
-    "tam": "chico",
+    "tam": "mediano",
+    "edad": "cachorro",
+    "fotos": ["../assets/imagenesAdoptables/Pelusa01.png"],
+    "desc": "Juguetón y mimoso; necesita tardes de juegos."
+  },
+  {
+    "id": 5,
+    "nombre": "Sombra",
+    "tipo": "gato",
+    "tam": "mediano",
+    "edad": "cachorro",
+    "fotos": [
+      "../assets/imagenesAdoptables/Sombra01.png",
+      "../assets/imagenesAdoptables/Sombra02.png"
+    ],
+    "desc": "Jovencito, necesita juegos, compañía y mimos."
+  },
+  {
+    "id": 6,
+    "nombre": "Risitas",
+    "tipo": "perro",
+    "tam": "mediano",
+    "edad": "joven",
+    "fotos": ["../assets/imagenesAdoptables/Risitas01.png"],
+    "desc": "Juguetón y leal; necesita tardes de juegos."
+  },
+  {
+    "id": 7,
+    "nombre": "Sr Spock",
+    "tipo": "gato",
+    "tam": "mediano",
+    "edad": "joven",
+    "fotos": [
+      "../assets/imagenesAdoptables/SrSpock01.png",
+      "../assets/imagenesAdoptables/SrSpock02.png"
+    ],
+    "desc": "Joven, necesita juegos, compañía y mimos."
+  },
+  {
+    "id": 8,
+    "nombre": "Sofía",
+    "tipo": "perro",
+    "tam": "mediano",
     "edad": "senior",
-    "fotos": ["https://placekitten.com/301/260"],
-    "desc": "Senior calmada, ideal para compañía y mimos."
+    "fotos": ["../assets/imagenesAdoptables/Sofia01.png"],
+    "desc": "Tranquila, entrenada, ideal para compañía."
+  },
+  {
+    "id": 9,
+    "nombre": "Rayito de Sol",
+    "tipo": "gato",
+    "tam": "mediano",
+    "edad": "adulto",
+    "fotos": [
+      "../assets/imagenesAdoptables/RayitoDeSol01.png",
+      "../assets/imagenesAdoptables/RayitoDeSol02.png"
+    ],
+    "desc": "Tranquilo y cariñoso, buen compañero de casa."
+  },
+  {
+    "id": 10,
+    "nombre": "Violeta",
+    "tipo": "perro",
+    "tam": "mediano",
+    "edad": "joven",
+    "fotos": ["../assets/imagenesAdoptables/Violeta01.jpg"],
+    "desc": "Joven, necesita juegos, compañía y mimos."
   }
 ]
